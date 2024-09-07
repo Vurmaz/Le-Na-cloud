@@ -1,0 +1,52 @@
+'use client'
+import { MdOutlineSecurity } from "react-icons/md";
+import { BiSupport } from "react-icons/bi";
+import { MdSmartToy } from "react-icons/md";
+import { GiScales } from "react-icons/gi";
+import { motion} from "framer-motion";
+
+
+export default function WhyService({ data, color }) {
+
+    const icons = [MdSmartToy, MdOutlineSecurity, GiScales, BiSupport]
+
+  return (
+    <motion.div 
+        className='h-max py-16 p-4 text-center px-2 lg:px-16 flex flex-col gap-8 w-full md:w-4/6 m-auto'
+        initial={{ opacity:0, y:300 }}
+        whileInView={{ opacity:1, y:0 }}
+        viewport={{ once:true }}
+        transition={{ duration:0.5, ease:'easeInOut' }}
+    >
+        <h1 
+            style={{ color:`var(--${color})`}} 
+            className='text-3xl sm:text-4xl md:text-5xl'
+        >
+            {data.conclusion.title}
+        </h1>
+        <h6 className='text-lg sm:text-xl md:text-xl px-8 md:px-0'>{data.conclusion.description}</h6>
+        <div 
+            className='grid grid-cols-2 gap-8 mt-4'                       
+        >
+            {
+                data.conclusion.benefits.map((item, i) => {
+                    let Icon = (icons.filter((element, index) => index == i))[0]
+                   
+                    return(
+                        <div                            
+                            key={i}
+                            className='flex flex-col gap-4 w-full lg:w-1/2 mx-auto'                            
+                            style={{ color:`var(--${color})`}}                        
+                        >
+                            <Icon className='w-8 h-8 lg:w-12 lg:h-12 mx-auto' />
+                            <h5 className='text-lg md:text-2xl text-[--text]'>{item.title}</h5>
+                            <p className='text-xs md:text-sm text-[--text]'>{item.desc}</p>
+                        </div>
+                    )
+                })
+            }            
+        </div>
+
+    </motion.div>
+  )
+}
