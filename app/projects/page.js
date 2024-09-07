@@ -28,7 +28,7 @@ export default async function ProjectPage() {
     <div className='bg-[--light]'>        
         <div className=' p-8 flex flex-col gap-4 h-max py-32'>
           <h1 className='text-3xl md:text-4xl lg:text-5xl text-center text-gradient p-2'>Salesforce Projelerimiz</h1>
-          <p className='w-full md:w-4/6 text-center mx-auto text-base md:text-lg lg:text-2xl leading-loose'>"Başarılı projelerimizle, işletmenizin Salesforce potansiyelini en üst seviyeye çıkarıyoruz. Her biri müşterilerimizin ihtiyaçlarına özel olarak tasarlanmış çözümlerimizle, dijital dönüşüm süreçlerinde fark yaratıyor ve büyümelerini hızlandırıyoruz."</p>
+          <p className='w-full md:w-4/6 text-center mx-auto text-base md:text-lg lg:text-2xl leading-loose'>Başarılı projelerimizle, işletmenizin Salesforce potansiyelini en üst seviyeye çıkarıyoruz. Her biri müşterilerimizin ihtiyaçlarına özel olarak tasarlanmış çözümlerimizle, dijital dönüşüm süreçlerinde fark yaratıyor ve büyümelerini hızlandırıyoruz.</p>
         </div>    
         <ImageIcons principles={principles} />       
             
