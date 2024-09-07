@@ -26,11 +26,11 @@ export default async function ProjectPage() {
   
   return (
     <div className='bg-[--light]'>        
-        <div className=' p-8 flex flex-col gap-4 h-max py-32'>
+        <div className=' p-8 flex flex-col gap-4 h-max pt-16 pb-32'>
           <h1 className='text-3xl md:text-4xl lg:text-5xl text-center text-gradient p-2'>Salesforce Projelerimiz</h1>
-          <p className='w-full md:w-4/6 text-center mx-auto text-base md:text-lg lg:text-2xl leading-loose'>Başarılı projelerimizle, işletmenizin Salesforce potansiyelini en üst seviyeye çıkarıyoruz. Her biri müşterilerimizin ihtiyaçlarına özel olarak tasarlanmış çözümlerimizle, dijital dönüşüm süreçlerinde fark yaratıyor ve büyümelerini hızlandırıyoruz.</p>
+          <p className='w-full md:w-4/6 text-center mx-auto text-base md:text-lg lg:text-2xl leading-loose'>{'Başarılı projelerimizle, işletmenizin Salesforce potansiyelini en üst seviyeye çıkarıyoruz. Her biri müşterilerimizin ihtiyaçlarına özel olarak tasarlanmış çözümlerimizle, dijital dönüşüm süreçlerinde fark yaratıyor ve büyümelerini hızlandırıyoruz.'}</p>
         </div>    
-        <ImageIcons principles={principles} />       
+              
             
         <div className='grid grid-cols-1 md:grid-cols-2 p-4 gap-4 py-32'>
 
@@ -54,9 +54,9 @@ export default async function ProjectPage() {
               </div>
             )
           }) 
-          }
+          }          
         </div>
-        {/* <MyProjects data={data} /> */}
+        <ImageIcons principles={principles} />         
         <Contact />
     </div>
   )
