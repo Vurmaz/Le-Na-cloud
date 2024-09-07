@@ -26,9 +26,10 @@ export default function SmallScreenServiceMenu({ data, setIsOpen }) {
       </motion.div>
       
         {
-          data.map((item) => {
+          data.map((item, i) => {
             return(
               <motion.div 
+                key={i}
                 className='flex gap-4 p-2 text-lg cursor-pointer w-full rounded-lg'
                 whileHover={{
                   backgroundColor:'var(--text)',
