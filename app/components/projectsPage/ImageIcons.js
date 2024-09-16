@@ -5,8 +5,6 @@ import IconRenderer from '../IconRenderer';
 
 export default function ImageIcons({ principles }) {
 
-
-
   return (
     <div 
         className='h-screen  gap-8 flex items-center justify-center bg-image relative'

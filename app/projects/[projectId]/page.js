@@ -13,9 +13,6 @@ const getProject = async(id) => {
                      
 }
 
-
-
-
 export default async function SingleProjectPage({ params }) {
 
     const { data } = await getProject(params.projectId)

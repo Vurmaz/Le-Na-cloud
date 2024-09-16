@@ -133,3 +133,17 @@
   /* This adds a dark overlay */
   z-index: 1;
 }
+
+.info-card:nth-child(2){
+  transform: translateY(-40px) !important;
+}
+.info-card:nth-child(4) {
+  transform: translateY(-40px) !important;
+}
+.info-card:nth-child(3) {
+  transform: translateY(40px) !important;
+}
+.info-card:nth-child(1) {
+  transform: translateY(40px) !important;
+}
+

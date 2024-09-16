@@ -8,7 +8,7 @@ export default function ReachMe() {
 
   return (
     <motion.div
-        className='grid grid-cols-1 md:grid-cols-2 gap-2 w-5/6 lg:w-4/6 rounded-lg gap-8 h-max md:h-96 p-4 py-16 md:py-0 text-white mx-auto bg-[--primary] shadow-lg'        
+        className='grid grid-cols-1 md:grid-cols-3 gap-2 w-full rounded-lg gap-8 h-max md:h-72 p-4 py-16 md:py-0 text-white mx-auto bg-[--light] shadow-lg'        
         initial={{
             y:300,
             opacity:0
@@ -21,7 +21,7 @@ export default function ReachMe() {
         transition={{ duration:0.4, ease:'easeInOut', delay:0.1 }}
         
     >
-        <div className='relative h-48 sm:h-56 md:h-64 lg:h-auto'>
+        <div className='relative h-48 sm:h-56 md:h-64 lg:h-auto my-0 md:my-auto lg:my-0'>
             <Image 
                 src={'/reach.png'}
                 fill
@@ -29,20 +29,21 @@ export default function ReachMe() {
                 className='object-contain'
             />
         </div>    
-        <div className='flex flex-col justify-center'>
-            <h6 className='text-3xl lg:text-4xl p-0 md:p-4 text-balance text-center md:text-start md:leading-loose'>Bize ulaşın size en uygun çözümü sunalım</h6>
-            <motion.h6 
-                className='underline text-sm md:text-base p-4 rounded-lg text-center md:text-start bg-transparent text-white w-full cursor-pointer'
+        <div className='flex flex-col justify-center items-center col-span-2 gap-4 md:gap-2'>            
+            <h6 className='text-3xl lg:text-4xl p-0 md:p-4 text-center text-center md:text-start text-[--primary] '>Detaylı bilgi için hemen iletişime geçin</h6>        
+            <motion.button 
+                className='text-xs md:text-sm p-4 rounded-lg text-center md:text-start w-max cursor-pointer text-[--primary] border-2 border-[--text] outline-none ml-4'
                 whileHover={{
-                    color:'var(--text)',
-                    translateY:-5
+                    color:'var(--light)',
+                    backgroundColor:'var(--primary)',
+                    borderColor:'var(--light)'
                 }}
                 onClick={()=> {
                     const contact = document.getElementById('home-contact')
                     contact.scrollIntoView({ behavior:'smooth' })
                 }}            
             >   Demo Talep edin
-            </motion.h6>            
+            </motion.button>            
         </div>
 
     </motion.div>

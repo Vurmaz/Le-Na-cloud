@@ -1,18 +1,26 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
+import IconRenderer from '../IconRenderer'
+import { useRouter } from 'next/navigation'
 
 
-export default function Card({ Icon, title, desc, color }) {
-  
+export default function Card({ Icon, color, name }) {
+    
+  const router = useRouter()
+  let href = (name.split(' ').join('-')).toLowerCase()
   return (
-    <div className='flex flex-col gap-2 sm:gap-4 w-fit min-w-[169px] md:min-w-0 md:w-full p-4 border-2 border-slate-200 shadow-lg rounded-lg'>        
-        <div 
-          className={`p-2 rounded-lg`} 
-          style={{ backgroundColor:`var(--dark-${color })`, color:`var(--${color })` }}
-        >
-          <Icon className={`w-8 h-8 sm:w-12 sm:h-12 md:w-[52px] md:h-[52px] mx-auto z-10 relative`} />
-        </div>
-        <h6 className='text-xs md:text-sm text-center text-[--text]'>{title}</h6>         
-    </div>
+    <motion.div 
+      className='flex flex-col items-center justify-center p-4 cursor-pointer'
+      style={{ color: `var(--${color})`}}
+      whileHover={{
+        scale:1.1
+      }}
+      onClick={()=> router.push(`/services/${href}`)}
+    >
+      <IconRenderer iconName={Icon} className='w-8 h-8' />
+      <h2>{name}</h2>
+    </motion.div>
   ) 
 }

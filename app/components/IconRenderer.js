@@ -1,4 +1,4 @@
-import { FaChartLine, FaHeart, FaShoppingCart, FaSlack, FaLeaf, FaComments } from "react-icons/fa";
+import { FaChartLine, FaHeart, FaShoppingCart, FaSlack, FaLeaf, FaComments, FaLightbulb } from "react-icons/fa";
 import { MdOutlinePersonSearch } from "react-icons/md";
 import { GiMaterialsScience } from "react-icons/gi";
 import { BsFillBarChartFill } from "react-icons/bs";
@@ -6,7 +6,8 @@ import { TbHexagonLetterMFilled } from "react-icons/tb";
 import { IoMdGlobe } from "react-icons/io";
 import { RiTeamLine } from "react-icons/ri";
 import { CiStar } from "react-icons/ci";
-
+import { GrOptimize } from "react-icons/gr";
+import { MdSelfImprovement } from "react-icons/md";
 
 const ICONS = {
   FaChartLine: FaChartLine,
@@ -20,7 +21,11 @@ const ICONS = {
   IoMdGlobe:IoMdGlobe,
   RiTeamLine:RiTeamLine,
   CiStar:CiStar,
-  FaComments:FaComments
+  FaComments:FaComments,
+  FaLightbulb:FaLightbulb,
+  GrOptimize:GrOptimize,
+  MdSelfImprovement:MdSelfImprovement,
+
 }
 
 export default function IconRenderer({ iconName, color, ...props }) {

@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="tr">
-      <body className={`${montserrat.className} md:!overflow-y-scroll smooth-scrool overflow-x-hidden	`}>
+      <body className={`${montserrat.className} md:!overflow-y-scroll overflow-x-hidden smooth-scrool 	`}>
         <Header />
         {children}
       </body>
