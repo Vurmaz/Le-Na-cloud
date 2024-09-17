@@ -17,7 +17,7 @@ export default function Schema() {
             id:'2',
             step:'ADIM 2',
             icon:'GrOptimize',
-            color:'commarce',
+            color:'commerce',
             title:'Salesforce Entegrasyonu ve Süreçleri Dijitalleştirme',
             desc:'Salesforce devreye girer, tüm süreçler dijitalleşir. Ekipler, manuel işlemlerden kurtulup daha verimli bir şekilde çalışmaya başlar. Veriler güvenli şekilde entegre edilir, iş akışları hız kazanır.'
         },
@@ -41,10 +41,10 @@ export default function Schema() {
                             className='flex flex-col gap-2'
                             style={{ color:`var(--${item.color}`} }
                         >
-                            <IconRenderer iconName={item.icon} className='w-12 h-12 text-[--primary]' />
-                            <h6 className='text-sm md:text-lg'>{item.step}</h6>
+                            <IconRenderer iconName={item.icon} className='md:w-16 md:h-16 w-12 h-12 text-[--primary]' />
+                            <h6 className='text-sm md:text-lg font-semibold'>{item.step}</h6>
                             <h1 className='text-sm md:text-xl text-[--primary]'>{item.title}</h1>
-                            <p className='text-xs text-[--text]'>{item.desc}</p>
+                            <p className='text-sm text-[--text]'>{item.desc}</p>
                         </div>                               
                     </div>                    
                 )

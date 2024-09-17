@@ -1,13 +1,11 @@
-  import Header from "@/app/components/header/header"
-  import ServiceHero from "@/app/components/servicePage/ServiceHero"
-  import Desc from "@/app/components/servicePage/Desc"
-  import Contact from '../../components/contact/Contact'
-  import WhyService from '../../components/servicePage/WhyService'
-  import Action from "@/app/components/servicePage/Action"
+import ServiceHero from "@/app/components/servicePage/ServiceHero"
+import Desc from "@/app/components/servicePage/Desc"
+import Contact from '../../components/contact/Contact'
+import WhyService from '../../components/servicePage/WhyService'
+import Action from "@/app/components/servicePage/Action"
 import Faq from "@/app/components/faq/Faq"
 
-
-  const getService = async(servicename) => {
+  const getService = async(servicename) => {    
     const response = await fetch(`http://localhost:3000/api/getService/${servicename}`, {
       method:"GET",
     })
@@ -23,9 +21,10 @@ import Faq from "@/app/components/faq/Faq"
   }  
 
  async function ServicesPage({ params }) {
+  
   const { data } = await getService(params.servicename) 
   const FaqData = await getFaq() 
-
+  
   const color = (data[0].name.split('-'))[0] 
   
   return (

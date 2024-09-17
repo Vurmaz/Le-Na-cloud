@@ -21,10 +21,9 @@ export default function ServiceMenu({ data, setIsServiceMenuOpen }) {
           {
             data.map((item, i) => {
                let href = (item.name.split(' ').join('-')).toLowerCase()
-              return(
-               
+              return(               
                 <Link href={`/services/${href}`} key={i}>
-                  <motion.div 
+                  <motion.div                                         
                       key={item.id} 
                       className='flex flex-col gap-2 mx-auto w-4/6 mx-auto cursor-pointer rounded-lg p-2'
                       style={{ color:`var(--${item.color})` }}

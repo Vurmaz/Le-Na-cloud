@@ -9,7 +9,6 @@ import ServiceMenu from './ServiceMenu';
 export default function ScreenSizeHeader({ data }) {
 
   const [isServiceMenuOpen, setIsServiceMenuOpen] = useState(false)
-
   return (
     <>
       <div className='md:flex items-center justify-between gap-8 w-full mx-auto hidden'>

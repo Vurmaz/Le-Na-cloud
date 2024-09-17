@@ -18,12 +18,11 @@ export default function InfoTwo() {
             }}               
         >
             <Image
-                src='/ow-3.jpg'
+                src='/info-two.jpg'
                 height={600}
                 width={600}
-                alt=''
+                alt='salesforce nedir?'
                 className='my-auto rounded-lg shadow-lg'
-
             />  
         </motion.div>   
         <motion.div 

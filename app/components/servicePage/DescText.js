@@ -10,7 +10,7 @@ export default function DescText({ data, color }) {
             className='w-full lg:w-5/6 mx-auto h-max md:h-screen px-2 md:px-8 flex flex-col-reverse md:grid md:grid-cols-2 pt-16 py-32 gap-2 md:gap-8'
         >
             <motion.div 
-                className='p-8 md:p-0' 
+                className='' 
                 style={{ color:`var(--${color})` }}
                 initial={{ opacity:0, x:-200 }}
                 whileInView={{ opacity:1, x:0 }}
@@ -38,6 +38,10 @@ export default function DescText({ data, color }) {
                     className='px-4 py-2 w-max rounded-lg text-white text-sm md:text-base mx-auto md:mx-0'
                     whileHover={{ backgroundColor:'var(--text)' }}
                     transition={{ duration:0.4, ease:'easeInOut' }}
+                    onClick={()=>{
+                        let contact = document.getElementById('service-contact')
+                        contact.scrollIntoView({ behavior:'smooth' })
+                    }}                    
                 >
                     Bize ulaşın
                 </motion.button>
