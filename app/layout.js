@@ -1,6 +1,7 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header/header";
+import Footer from "./components/footer/Footer";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       <body className={`${montserrat.className} md:!overflow-y-scroll overflow-x-hidden smooth-scrool 	`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

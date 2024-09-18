@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --text:#032D60;
+  --text:rgb(3, 45, 96);
   --primary:#0D9DDA;
   --light:#e6f5fb;
   --hovered:#021f43;

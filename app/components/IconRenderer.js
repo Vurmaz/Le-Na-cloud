@@ -8,6 +8,7 @@ import { RiTeamLine } from "react-icons/ri";
 import { CiStar } from "react-icons/ci";
 import { GrOptimize } from "react-icons/gr";
 import { MdSelfImprovement } from "react-icons/md";
+import { TbUserScreen } from "react-icons/tb";
 
 const ICONS = {
   FaChartLine: FaChartLine,
@@ -25,7 +26,7 @@ const ICONS = {
   FaLightbulb:FaLightbulb,
   GrOptimize:GrOptimize,
   MdSelfImprovement:MdSelfImprovement,
-
+  TbUserScreen:TbUserScreen
 }
 
 export default function IconRenderer({ iconName, color, ...props }) {
