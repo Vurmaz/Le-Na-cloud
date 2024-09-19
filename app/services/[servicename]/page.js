@@ -4,6 +4,7 @@ import Contact from '../../components/contact/Contact'
 import WhyService from '../../components/servicePage/WhyService'
 import Action from "@/app/components/servicePage/Action"
 import Faq from "@/app/components/faq/Faq"
+import Footer from "@/app/components/footer/Footer"
 
   const getService = async(servicename) => {    
     const response = await fetch(`http://localhost:3000/api/getService/${servicename}`, {
@@ -36,9 +37,10 @@ import Faq from "@/app/components/faq/Faq"
       </div>      
       <WhyService data={data[0]} color={color} />
       <Faq data={FaqData.data} color={color} />    
-      <div id="service-contact" className=''>
-        <Contact color={color} />        
+      <div className=''>
+        <Contact color={color} id={'service-contact'} />        
       </div>
+      <Footer color='white' />
     </div>
   )
 }

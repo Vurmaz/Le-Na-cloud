@@ -6,6 +6,7 @@ import Info from "./components/info/Info";
 import About from "./components/about/About";
 import ReachMe from "./components/ReachMe";
 import Faq from "./components/faq/Faq";
+import Footer from "./components/footer/Footer";
 
   const getFaq = async() => {
     const response = await fetch(`http://localhost:3000/api/getFaq`, {
@@ -29,6 +30,7 @@ const FaqData = await getFaq()
       <ServiceCall />  
       <Faq data={FaqData.data} color={`primary`}/>              
       <Contact id={'home-contact'}/>
+      <Footer color='var(--light)' />
     </main>
   );
 }

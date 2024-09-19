@@ -8,7 +8,7 @@ import { FaHome } from "react-icons/fa";
 import CustomDiv from './CustomDiv';
 import SmallScreenServiceMenu from './SmallScreenServiceMenu';
 
-export default function Menu({ data }) {
+export default function Menu({ isMenuOpen, setIsMenuOpen, data }) {
   const [isOpen, setIsOpen] = useState(false)
 
   const [navs, setNavs] = useState([
@@ -30,19 +30,16 @@ export default function Menu({ data }) {
       >      
         {
           navs.map((nav, i) => {
-            return(<CustomDiv title={nav.title} Icon={nav.Icon} key={i} setIsOpen={setIsOpen}  />)
+            return(<CustomDiv title={nav.title} Icon={nav.Icon} key={i} setIsOpen={setIsOpen} setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen}  />)
           })
         }   
         <AnimatePresence>
           {
             isOpen
             &&
-            <SmallScreenServiceMenu data={data} setIsOpen={setIsOpen} />
+            <SmallScreenServiceMenu data={data} setIsOpen={setIsOpen} setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
           }             
-        </AnimatePresence> 
-            
+        </AnimatePresence>             
       </motion.div>      
-    
-
   )
 }

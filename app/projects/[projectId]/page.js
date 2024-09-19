@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import SingleProject from '@/app/components/singleProjectPage/SingleProject'
+import Footer from '@/app/components/footer/Footer'
 
 const getProject = async(id) => {        
     const response = await fetch(`http://localhost:3000/api/getProjects/${id}`, { cache:'no-cache' }, {
@@ -27,6 +28,7 @@ export default async function SingleProjectPage({ params }) {
           )
         })
       }
+      <Footer color='white' />
     </div>
   )
 }

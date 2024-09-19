@@ -19,7 +19,7 @@ export default function AboutHero() {
   return ( 
     <div className=' h-auto text-white'>
         <div id='about-hero' className='flex flex-col gap-2 h-[65vh] bg-[--primary] pt-8'>
-            <h1 className='text-2xl md:text-4xl text-center w-full md:w-4/6 mx-auto'>Biz Yaratıcı ve tecrübeli ekibizmle fikirlerinizi gerçeğe dönüştürüyoruz</h1>
+            <h1 className='text-2xl md:text-4xl text-center w-full md:w-4/6 mx-auto'>Biz yaratıcı ve tecrübeli ekibizmle fikirlerinizi gerçeğe dönüştürüyoruz</h1>
             <p className='text-sm w-5/6 md:w-1/2 mx-auto  text-center'>Yıllar süren tecrübemiz ile sektöre ve indüstüriye hakımiyetimzle dailşxc oadsad lşdsdlasşdl askdkalsdlka daslşödşaölsdşölaşölsd asmldmasdlkaskdölşasdşlöaşlödsölşasml klmaskasdlşöşl</p>
             <motion.button 
             className='mt-8 bg-[--light] sm:text-base rounded-full text-[--text] shadow w-max h-max p-2 mx-auto whitespace-nowrap	'

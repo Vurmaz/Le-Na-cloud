@@ -32,15 +32,13 @@ export default function ScreenSizeHeader({ data }) {
                 <h6 className='cursor-pointer text-base'>Projelerimiz</h6>
               </Link>  
               <div className='flex items-center'>
+              <Link href='/about' className='flex items-center'>
                 <h6 
-                  className='cursor-pointer text-base border-2'
-                  onClick={()=>{
-                    const about = document.getElementById('about')
-                    about.scrollIntoView({ behavior:'smooth' })
-                  }}
+                  className='cursor-pointer text-base'
                 >
                   Hakkımızda
-                </h6>                   
+                </h6> 
+              </Link>                  
               </div>                                             
           </div>
           <div className='p-4'>

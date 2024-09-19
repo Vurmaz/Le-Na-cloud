@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function ProjectsHolder({ data }) {
   return (
-    <div className='py-32 h-max md:h-screen '>
+    <div className='h-max md:h-screen '>
         <h1 className='text-center text-2xl md:text-5xl pt-4 pb-8 text-gradient font-semibold'>Müşterilerimize hazırladığımız projelerimiz</h1>
         <div className='grid grid-cols-1 md:grid-cols-2 p-4 gap-4 '>        
             {

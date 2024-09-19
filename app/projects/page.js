@@ -9,6 +9,7 @@ import ProjectsHolder from '../components/projectsPage/ProjectsHolder'
 import Faq from '../components/faq/Faq'
 import ServiceHeroSvg from '../components/servicePage/ServiceHeroSvg'
 import Svg from '../../public/work.svg'
+import Footer from '../components/footer/Footer'
 
   const getProjects = async() => {
     const response = await fetch(`http://localhost:3000/api/getProjects`, { cache:'no-store' }, {
@@ -62,7 +63,8 @@ export default async function ProjectPage() {
         <ProjectsHolder data={data} />
         <ImageIcons principles={principles} /> 
         <Faq data={faqData.data} color='primary' />        
-        <Contact />
+        <Contact id={'project-contact'} />
+        <Footer color='var(--light)' />
     </div>
   )
 }

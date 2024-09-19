@@ -12,12 +12,11 @@ import Link from 'next/link'
     return response.json()
   }
   
-export default async function Footer() {
+export default async function Footer({ color }) {
     const { data } = await getLogos()
-
-
+    
   return (
-    <div className='h-max bg-[--light]'>
+    <div className='h-max' style={{ backgroundColor:color }}>
         <div className='flex flex-col sm:flex-row items-center sm:items-start gap-4 justify-evenly p-8'>
             <FooterServices data={data} />
             <FooterUsefulLinks />
