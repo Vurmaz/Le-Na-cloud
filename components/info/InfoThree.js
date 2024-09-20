@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 export default function InfoThree() {
   return (
-    <div className='flex flex-col-reverse md:grid md:grid-cols-2 gap-4 w-11/12 h-[85vh] mx-auto py-32 md:py-0'>
+    <div className='flex flex-col-reverse md:grid md:grid-cols-2 gap-4 w-11/12 md:w-5/6 h-[85vh] mx-auto py-32 md:py-0'>
    
         <motion.div 
             className='flex flex-col items-start justify-center gap-2 md:pl-2 lg:pl-8 xl:px-16'
@@ -24,7 +24,7 @@ export default function InfoThree() {
             </motion.p>
         </motion.div> 
         <motion.div 
-            className='flex flex-col items-center gap-8 overflow w-4/6 md:w-full mx-auto'
+            className='flex flex-col items-center gap-8 overflow w-5/6 md:w-4/6 md:w-full mx-auto'
             initial={{ x:-300, opacity:0 }}
             whileInView={{ x:0, opacity:1 }}
             viewport={{ once:true }}

@@ -13,7 +13,7 @@ export default function AboutTexts({ item }) {
         viewport={{ once:true }}
     >
         <h1 className='text-3xl sm:text-4xl md:text-5xl text-center text-gradient p-2'>{item.title}</h1>
-        <p className='w-full md:w-4/6 text-center mx-auto text-xs sm:text-lg md:text-xl '>{item.desc}</p>
+        <p className='w-full md:w-4/6 text-start mx-auto text-xs sm:text-lg md:text-xl '>{item.desc}</p>
     </motion.div> 
   )
 }

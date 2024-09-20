@@ -1,14 +1,11 @@
 'use client'
-import { useEffect, useState } from 'react'
-import { motion, animate, AnimatePresence } from 'framer-motion'
-import IconRenderer from '../IconRenderer'
+import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { RiArrowDropRightLine } from "react-icons/ri";
-import Link from 'next/link';
-import { FaHome } from "react-icons/fa";
-import CustomDiv from './CustomDiv';
+import SmallNavMenu from './SmallNavMenu';
 import SmallScreenServiceMenu from './SmallScreenServiceMenu';
 
-export default function Menu({ isMenuOpen, setIsMenuOpen, data }) {
+export default function SmallMenu({ isMenuOpen, setIsMenuOpen, data }) {
   const [isOpen, setIsOpen] = useState(false)
 
   const [navs, setNavs] = useState([
@@ -30,7 +27,16 @@ export default function Menu({ isMenuOpen, setIsMenuOpen, data }) {
       >      
         {
           navs.map((nav, i) => {
-            return(<CustomDiv title={nav.title} Icon={nav.Icon} key={i} setIsOpen={setIsOpen} setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen}  />)
+            return(
+              <SmallNavMenu 
+                title={nav.title} 
+                Icon={nav.Icon} 
+                key={i} 
+                setIsOpen={setIsOpen} 
+                setIsMenuOpen={setIsMenuOpen} 
+                isMenuOpen={isMenuOpen}                  
+              />
+            )
           })
         }   
         <AnimatePresence>

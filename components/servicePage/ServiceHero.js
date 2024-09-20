@@ -1,9 +1,7 @@
 import React from 'react'
-  import Image from "next/image"
-  import Link from 'next/link'
 import HeroButton from './HeroButton'
 import ServiceHeroSvg from './ServiceHeroSvg'
-import Svg from '../../../public/ai.svg'
+import Svg from '../.././public/ai.svg'
 
 export default function ServiceHero({ data, color }) {
 

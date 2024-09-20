@@ -1,7 +1,5 @@
 import React from 'react'
-import { SlArrowRight } from "react-icons/sl";
 import IconRenderer from '../IconRenderer';
-
 
 export default function Schema() {
 

@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import ServiceHeroSvg from './ServiceHeroSvg'
-import Svg from '../../../public/amico-2.svg'
+import Svg from '../.././public/amico-2.svg'
 
 export default function DescText({ data, color }) {
 

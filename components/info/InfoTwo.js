@@ -5,9 +5,9 @@ import { motion } from 'framer-motion'
 
 export default function InfoTwo() {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 h-max py-32 md:py-0 md:h-[85vh] gap-8 w-11/12 mx-auto'>
+    <div className='grid grid-cols-1 md:grid-cols-2 h-max py-32 md:py-0 md:h-[85vh] gap-8 w-11/12 md:w-5/6 mx-auto'>
         <motion.div 
-            className='flex flex-col items-center gap-8 overflow w-4/6 md:w-full mx-auto'
+            className='flex flex-col items-center gap-8 overflow w-5/6 md:w-4/6 md:w-full mx-auto'
             initial={{ x:-300, opacity:0 }}
             whileInView={{ x:0, opacity:1 }}
             viewport={{ once:true }}

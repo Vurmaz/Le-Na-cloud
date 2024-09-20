@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 export default function InfoCardInfo() {
   return (
     <motion.div 
-        className='flex flex-col items-start w-5/6 mx-auto justify-center gap-4'
+        className='hidden md:flex flex-col items-start w-5/6 mx-auto justify-center gap-4'
         initial={{ x:-300, opacity:0 }}
         whileInView={{ x:0, opacity:1 }}
         viewport={{ once:true }}

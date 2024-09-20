@@ -1,11 +1,9 @@
 'use client'
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 
 export default function AboutHero() {
 
-    const ref = useRef(null)
     const [heroHeight, setHeroHeight] = useState(0)
 
     useEffect(()=> {
@@ -15,7 +13,7 @@ export default function AboutHero() {
         }
 
     }, [heroHeight])
-    console.log(heroHeight)
+    
   return ( 
     <div className=' h-auto text-white'>
         <div id='about-hero' className='flex flex-col gap-2 h-[65vh] bg-[--primary] pt-8'>

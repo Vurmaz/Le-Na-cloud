@@ -55,6 +55,9 @@ export default function CustomDiv({ title, Icon, setIsOpen, setIsMenuOpen, isMen
         if(pathname.includes('services')) {
           nav('service')
         }  
+        if(pathname === '/') {
+          nav('home')
+        }
         break;
     }
   }

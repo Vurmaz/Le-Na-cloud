@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-export default function AboutOutro() {
+export default function AboutAction() {
   return (
     <div className='flex flex-col md:grid md:grid-cols-4 h-max md:h-80 gap-2 px-2'>
         <motion.div 

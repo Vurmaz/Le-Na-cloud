@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 export default function SmallScreenServiceMenu({ data, setIsOpen, isMenuOpen, setIsMenuOpen }) {
 
   const router = useRouter()
+  
   const click = (href) => {
     router.push(`/services/${href}`)
     setIsMenuOpen(false)

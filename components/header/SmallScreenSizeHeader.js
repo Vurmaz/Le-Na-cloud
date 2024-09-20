@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import { RxHamburgerMenu } from "react-icons/rx";
-import Menu from './Menu';
+import SmallMenu from './SmallMenu';
 import { AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -33,7 +33,7 @@ export default function SmallScreenSizeHeader({ data }) {
                 {
                   isMenuOpen 
                   &&
-                  <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} data={data} /> 
+                  <SmallMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} data={data} /> 
                 }                
             </AnimatePresence>
 

@@ -1,25 +1,11 @@
-import ServiceHero from "@/app/components/servicePage/ServiceHero"
-import Desc from "@/app/components/servicePage/Desc"
-import Contact from '../../components/contact/Contact'
-import WhyService from '../../components/servicePage/WhyService'
-import Action from "@/app/components/servicePage/Action"
-import Faq from "@/app/components/faq/Faq"
-import Footer from "@/app/components/footer/Footer"
-
-  const getService = async(servicename) => {    
-    const response = await fetch(`http://localhost:3000/api/getService/${servicename}`, {
-      method:"GET",
-    })
-    return response.json()
-
-  }
-  const getFaq = async() => {
-    const response = await fetch(`http://localhost:3000/api/getFaq`, {
-      method:"GET",
-    })
-    return response.json()
-
-  }  
+import ServiceHero from "@/components/servicePage/ServiceHero"
+import Desc from "@/components/servicePage/Desc"
+import Contact from '../../../components/contact/Contact'
+import WhyService from '../../../components/servicePage/WhyService'
+import Action from "@/components/servicePage/Action"
+import Faq from "@/components/faq/Faq"
+import Footer from "@/components/footer/Footer"
+import { getService, getFaq } from '../../../libs/utils'
 
  async function ServicesPage({ params }) {
   

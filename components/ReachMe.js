@@ -2,7 +2,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import Svg from '../../public/talk.svg'
+import Svg from '.././public/talk.svg'
 import ServiceHeroSvg from './servicePage/ServiceHeroSvg'
 
 export default function ReachMe() {

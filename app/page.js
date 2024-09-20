@@ -1,24 +1,18 @@
 
-import Hero from "./components/hero/Hero"
-import ServiceCall from "./components/services/ServiceHome";
-import Contact from "./components/contact/Contact";
-import Info from "./components/info/Info";
-import About from "./components/about/About";
-import ReachMe from "./components/ReachMe";
-import Faq from "./components/faq/Faq";
-import Footer from "./components/footer/Footer";
-
-  const getFaq = async() => {
-    const response = await fetch(`http://localhost:3000/api/getFaq`, {
-      method:"GET",
-    })
-    return response.json()
-
-  }  
+import Hero from "../components/hero/Hero"
+import ServiceCall from "../components/services/ServiceHome";
+import Contact from "../components/contact/Contact";
+import Info from "../components/info/Info";
+import About from "../components/about/About";
+import ReachMe from "../components/ReachMe";
+import Faq from "../components/faq/Faq";
+import Footer from "../components/footer/Footer";
+import { getFaq } from "@/libs/utils";
 
 export default async function Home() {
 
 const FaqData = await getFaq() 
+
   return (
     <main className="">      
       <Hero />

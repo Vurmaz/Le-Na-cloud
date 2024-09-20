@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import ServiceHeroSvg from '../servicePage/ServiceHeroSvg'
-import Svg from '../../../public/questions.svg'
+import Svg from '../.././public/questions.svg'
 import { motion } from 'framer-motion'
 
 export default function FaqImage({ color }) {
