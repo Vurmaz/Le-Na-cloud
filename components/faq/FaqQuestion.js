@@ -1,12 +1,10 @@
 'use client'
-import { useState } from 'react'
 import { FaCaretDown } from "react-icons/fa";
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function FaqQuestion({ item, i, color, activeIndex, setActiveIndex }) {
 
     const clicked = (i) => {
-        console.log(i)
         setActiveIndex(prev => prev === i ? null : i)
     }
     

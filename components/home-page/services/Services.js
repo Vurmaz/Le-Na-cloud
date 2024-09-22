@@ -26,7 +26,6 @@ export default function Services({ services }) {
                 })
             }            
         </motion.div>
-
     </div>
   )
 }

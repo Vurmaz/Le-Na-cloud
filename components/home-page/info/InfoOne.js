@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
@@ -15,7 +16,6 @@ export default function InfoOne() {
                 ease:'easeInOut',
                 delay:0.2
             }}       
-
         >     
             <h1 className='text-2xl sm:text-3xl  lg:text-4xl text-center mx-auto md:mx-0 text-[--primary]'>Sorunlarınızı Çözelim</h1>                          
             <motion.p 

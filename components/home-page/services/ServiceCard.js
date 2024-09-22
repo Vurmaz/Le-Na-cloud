@@ -1,7 +1,8 @@
+
 import Link from 'next/link'
 import React from 'react'
 import { motion } from 'framer-motion'
-import IconRenderer from '../IconRenderer';
+import IconRenderer from '../../IconRenderer';
 
 export default function ServiceCard({ name, Icon, desc, color }) {
     const href = (name.split(' ').join('-')).toLowerCase()

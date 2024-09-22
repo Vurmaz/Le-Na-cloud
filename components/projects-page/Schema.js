@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { memo } from 'react'
 import IconRenderer from '../IconRenderer';
 
-export default function Schema() {
+export default memo(function Schema() {
 
     const data = [
         {
@@ -54,6 +54,5 @@ export default function Schema() {
             }     
         </div>        
     </div>
-
   )
-}
+})

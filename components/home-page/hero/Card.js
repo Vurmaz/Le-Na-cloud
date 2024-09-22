@@ -1,10 +1,8 @@
 'use client'
 import React from 'react'
-import Image from 'next/image'
 import { motion } from 'framer-motion'
-import IconRenderer from '../IconRenderer'
+import IconRenderer from '../../IconRenderer'
 import { useRouter } from 'next/navigation'
-
 
 export default function Card({ Icon, color, name }) {
     

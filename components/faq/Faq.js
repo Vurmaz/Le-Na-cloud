@@ -4,7 +4,9 @@ import FaqQuestion from './FaqQuestion';
 import { useState } from 'react';
 
 export default function Faq({ data, color }) {
+
    const [activeIndex, setActiveIndex] = useState(null) 
+   
   return (
     <div className='flex h-max w-full md:w-11/12 lg:w-5/6 mx-auto justify-center'>
         <div className='grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 '>

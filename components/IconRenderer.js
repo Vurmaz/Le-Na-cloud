@@ -1,40 +1,34 @@
-import { FaChartLine, FaHeart, FaShoppingCart, FaSlack, FaLeaf, FaComments, FaLightbulb } from "react-icons/fa";
-import { MdOutlinePersonSearch } from "react-icons/md";
-import { GiMaterialsScience } from "react-icons/gi";
-import { BsFillBarChartFill } from "react-icons/bs";
-import { TbHexagonLetterMFilled } from "react-icons/tb";
-import { IoMdGlobe } from "react-icons/io";
-import { RiTeamLine } from "react-icons/ri";
-import { CiStar } from "react-icons/ci";
-import { GrOptimize } from "react-icons/gr";
-import { MdSelfImprovement } from "react-icons/md";
-import { TbUserScreen } from "react-icons/tb";
+import React, { memo, lazy, Suspense } from "react";
 
 const ICONS = {
-  FaChartLine: FaChartLine,
-  FaHeart: FaHeart,
-  FaSlack:FaSlack,
-  FaShoppingCart:FaShoppingCart,
-  MdOutlinePersonSearch:MdOutlinePersonSearch,
-  GiMaterialsScience:GiMaterialsScience,
-  BsFillBarChartFill:BsFillBarChartFill,
-  TbHexagonLetterMFilled:TbHexagonLetterMFilled,
-  IoMdGlobe:IoMdGlobe,
-  RiTeamLine:RiTeamLine,
-  CiStar:CiStar,
-  FaComments:FaComments,
-  FaLightbulb:FaLightbulb,
-  GrOptimize:GrOptimize,
-  MdSelfImprovement:MdSelfImprovement,
-  TbUserScreen:TbUserScreen
-}
+  FaChartLine: lazy(() => import("react-icons/fa").then((mod) => ({ default: mod.FaChartLine }))),
+  FaHeart: lazy(() => import("react-icons/fa").then((mod) => ({ default: mod.FaHeart }))),
+  FaSlack: lazy(() => import("react-icons/fa").then((mod) => ({ default: mod.FaSlack }))),
+  FaShoppingCart: lazy(() => import("react-icons/fa").then((mod) => ({ default: mod.FaShoppingCart }))),
+  MdOutlinePersonSearch: lazy(() => import("react-icons/md").then((mod) => ({ default: mod.MdOutlinePersonSearch }))),
+  GiMaterialsScience: lazy(() => import("react-icons/gi").then((mod) => ({ default: mod.GiMaterialsScience }))),
+  BsFillBarChartFill: lazy(() => import("react-icons/bs").then((mod) => ({ default: mod.BsFillBarChartFill }))),
+  TbHexagonLetterMFilled: lazy(() => import("react-icons/tb").then((mod) => ({ default: mod.TbHexagonLetterMFilled }))),
+  IoMdGlobe: lazy(() => import("react-icons/io").then((mod) => ({ default: mod.IoMdGlobe }))),
+  RiTeamLine: lazy(() => import("react-icons/ri").then((mod) => ({ default: mod.RiTeamLine }))),
+  CiStar: lazy(() => import("react-icons/ci").then((mod) => ({ default: mod.CiStar }))),
+  FaComments: lazy(() => import("react-icons/fa").then((mod) => ({ default: mod.FaComments }))),
+  FaLightbulb: lazy(() => import("react-icons/fa").then((mod) => ({ default: mod.FaLightbulb }))),
+  GrOptimize: lazy(() => import("react-icons/gr").then((mod) => ({ default: mod.GrOptimize }))),
+  MdSelfImprovement: lazy(() => import("react-icons/md").then((mod) => ({ default: mod.MdSelfImprovement }))),
+  TbUserScreen: lazy(() => import("react-icons/tb").then((mod) => ({ default: mod.TbUserScreen }))),
+};
 
-export default function IconRenderer({ iconName, color, ...props }) {
+export default memo(function IconRenderer({ iconName, color, ...props }) {
   const IconComponent = ICONS[iconName]
 
   if (!IconComponent) {
     return null
   }
 
-  return <IconComponent style={{ color:`var(--${color})`}} {...props} />
-}
+    return (
+    <Suspense fallback={<div className="w-8 h-8 rounded-lg text-grey"></div>}>
+      <IconComponent style={{ color: `var(--${color})` }} {...props} />
+    </Suspense>
+  );
+})

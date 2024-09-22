@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { useRouter } from 'next/navigation'
 import { usePathname } from 'next/navigation'
 
-export default function CustomDiv({ title, Icon, setIsOpen, setIsMenuOpen, isMenuOpen, ...props }) {
+export default function SmallNavMenu({ title, Icon, setIsOpen, setIsMenuOpen, isMenuOpen }) {
 
   const router = useRouter()
   const pathname = usePathname()
@@ -27,6 +27,7 @@ export default function CustomDiv({ title, Icon, setIsOpen, setIsMenuOpen, isMen
       case 'Servislerimiz' :
         setIsOpen(true)
         break;
+        
       case 'Projelerimiz' :
         router.push('/projects')
         setIsMenuOpen(false)
@@ -36,6 +37,7 @@ export default function CustomDiv({ title, Icon, setIsOpen, setIsMenuOpen, isMen
             document.body.style.overflowY = "hidden"
         }          
         break;
+
       case 'Hakkımızda' :
         router.push('/about');
         setIsMenuOpen(false)
@@ -45,6 +47,7 @@ export default function CustomDiv({ title, Icon, setIsOpen, setIsMenuOpen, isMen
             document.body.style.overflowY = "hidden"
         }             
         break;
+        
       case 'İletişime Geçin' :
         if(pathname.includes('about')) {
             nav('about')

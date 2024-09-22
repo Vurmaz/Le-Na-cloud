@@ -5,7 +5,6 @@ import { MdSmartToy } from "react-icons/md";
 import { GiScales } from "react-icons/gi";
 import { motion} from "framer-motion";
 
-
 export default function WhyService({ data, color }) {
 
     const icons = [MdSmartToy, MdOutlineSecurity, GiScales, BiSupport]

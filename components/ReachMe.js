@@ -1,12 +1,10 @@
 'use client'
 import React from 'react'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import Svg from '.././public/talk.svg'
-import ServiceHeroSvg from './servicePage/ServiceHeroSvg'
+import ServiceHeroSvg from './service-page/ServiceHeroSvg'
 
 export default function ReachMe() {
-
 
   return (
     <motion.div

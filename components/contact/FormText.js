@@ -1,7 +1,5 @@
 
 import React from 'react'
-import { IoMdPhonePortrait } from "react-icons/io";
-import { MdOutlineEmail } from "react-icons/md";
 
 export default function FormText() {
 

@@ -1,11 +1,7 @@
-'use client'
+
 import React from 'react'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import InfoOne from './InfoOne'
 import InfoTwo from './InfoTwo'
 import InfoThree from './InfoThree'
-import Line from './Line'
 import InfoCards from './InfoCards'
 import InfoCardInfo from './InfoCardInfo'
 

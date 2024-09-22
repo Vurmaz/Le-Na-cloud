@@ -1,10 +1,10 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, memo } from 'react'
 import Link from 'next/link'
 import { FaAngleDown } from "react-icons/fa";
 import { motion } from 'framer-motion';
 
-export default function FooterUsefulLinks() {
+export default memo(function FooterUsefulLinks() {
 
     const [isOpen, setIsOpen] = useState(false)
 
@@ -50,4 +50,4 @@ export default function FooterUsefulLinks() {
 
     </div>
   )
-}
+})

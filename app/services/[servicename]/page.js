@@ -1,13 +1,13 @@
-import ServiceHero from "@/components/servicePage/ServiceHero"
-import Desc from "@/components/servicePage/Desc"
+import ServiceHero from "@/components/service-page/ServiceHero"
+import Desc from "@/components/service-page/Desc"
 import Contact from '../../../components/contact/Contact'
-import WhyService from '../../../components/servicePage/WhyService'
-import Action from "@/components/servicePage/Action"
+import WhyService from '../../../components/service-page/WhyService'
+import Action from "@/components/service-page/Action"
 import Faq from "@/components/faq/Faq"
 import Footer from "@/components/footer/Footer"
 import { getService, getFaq } from '../../../libs/utils'
 
- async function ServicesPage({ params }) {
+async function ServicesPage({ params }) {
   
   const { data } = await getService(params.servicename) 
   const FaqData = await getFaq() 

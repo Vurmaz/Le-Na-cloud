@@ -1,9 +1,9 @@
 
-import Hero from "../components/hero/Hero"
-import ServiceCall from "../components/services/ServiceHome";
+import Hero from "../components/home-page/hero/Hero"
+import ServiceCall from "../components/home-page/services/ServiceHome";
 import Contact from "../components/contact/Contact";
-import Info from "../components/info/Info";
-import About from "../components/about/About";
+import Info from "../components/home-page/info/Info";
+import About from "../components/home-page/about/About";
 import ReachMe from "../components/ReachMe";
 import Faq from "../components/faq/Faq";
 import Footer from "../components/footer/Footer";

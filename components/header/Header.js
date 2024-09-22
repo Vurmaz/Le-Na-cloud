@@ -1,12 +1,6 @@
 import SmallScreenSizeHeader from './SmallScreenSizeHeader'
 import ScreenSizeHeader from './ScreenSizeHeader'
-
-  const getLogos = async() => {
-    const response = await fetch('http://localhost:3000/api/getLogos',{ cache: 'no-store' }, {
-        method:'GET',
-    })
-    return response.json()
-  }
+import { getLogos } from '@/libs/utils'
 
 export default async function Header() {
 

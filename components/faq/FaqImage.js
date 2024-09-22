@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import ServiceHeroSvg from '../servicePage/ServiceHeroSvg'
+import ServiceHeroSvg from '../service-page/ServiceHeroSvg'
 import Svg from '../.././public/questions.svg'
 import { motion } from 'framer-motion'
 

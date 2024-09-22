@@ -1,16 +1,6 @@
 
 import AboutTexts from './AboutTexts'
-
-
-const getAboutData = async() => {        
-    const response = await fetch(`http://localhost:3000/api/getAbout`, { cache:'no-cache' }, {
-        method: 'GET',
-        headers: {
-        'Content-Type': 'application/json',
-        }
-    })
-        return await response.json()           
-}
+import { getAboutData } from '@/libs/utils'
 
 export default async function About() {
 

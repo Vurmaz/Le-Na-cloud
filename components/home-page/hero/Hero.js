@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import HeroImages from './HeroImages'
 import HeroText from './HeroText'
 
 export default function Hero() {
@@ -15,15 +15,7 @@ export default function Hero() {
     >
       <div className='flex flex-col-reverse md:grid md:grid-cols-2 h-auto md:h-5/6 px-16'>
         <HeroText />
-        <div className='relative h-80 md:h-auto '>
-          <Image
-            className='pt-4 md:pt-8' 
-            src='/tele.png'
-            fill
-            style={{ objectFit:'contain' }}
-            alt={'Salesforce'}                       
-          />
-        </div>
+        <HeroImages />
       </div>        
     </section>
   )

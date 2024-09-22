@@ -6,7 +6,6 @@ import { motion } from 'framer-motion'
 export default function InfoThree() {
   return (
     <div className='flex flex-col-reverse md:grid md:grid-cols-2 gap-4 w-11/12 md:w-5/6 h-[85vh] mx-auto py-32 md:py-0'>
-   
         <motion.div 
             className='flex flex-col items-start justify-center gap-2 md:pl-2 lg:pl-8 xl:px-16'
             initial={{ x:300, opacity:0 }}
@@ -38,7 +37,7 @@ export default function InfoThree() {
                 src='/office-workers-2.jpg'
                 height={600}
                 width={600}
-                alt=''
+                alt='Crm nedir?'
                 className=' my-auto rounded-lg shadow-lg'
 
             />  

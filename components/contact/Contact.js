@@ -5,6 +5,7 @@ import FormText from './FormText'
 import { motion } from 'framer-motion'
 
 export default function Contact({ id }) {
+  
   return (
     <div id={id} className='h-max md:h-screen grid grid-cols-1 md:grid-cols-2 p-8 gap-2 '>
         <motion.div 

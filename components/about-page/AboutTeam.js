@@ -1,23 +1,9 @@
 'use client'
-import React from 'react'
+import React, { memo } from 'react'
 import { motion } from 'framer-motion'
+import data from '@/data/about-date.json'
 
-export default function AboutTeam() {
-
-    const data = [
-        {
-            number:'2022',
-            title:'Kuruldu'
-        },
-        {
-            number:'3',
-            title:'Ülkede'
-        },
-        {
-            number:'2024',
-            title:'Kuruldu'
-        },                
-    ]
+export default memo(function AboutTeam() {
 
   return (
     <div className='flex gap-2 px-2 md:px-32'>
@@ -58,4 +44,4 @@ export default function AboutTeam() {
         </motion.div>
     </div>
   )
-}
+})

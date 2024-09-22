@@ -4,14 +4,11 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { FaAngleDown } from "react-icons/fa";
 import { motion } from 'framer-motion';
-import { usePathname } from 'next/navigation'
 
 export default function FooterContact() {
 
     const [isOpen, setIsOpen] = useState(false)
-      const pathname = usePathname()
 
-    console.log(pathname)
   return (
     <div className='flex flex-col gap-2'>
         <div className='flex items-center gap-2 cursor-pointer justify-center sm:justify-start p-2 sm:p-0' onClick={()=>setIsOpen(!isOpen)}>
