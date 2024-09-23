@@ -17,7 +17,8 @@ export default function ScreenSizeHeader({ data }) {
             <Image
               src='/logo.png'
               width={60}
-              height={60}          
+              height={60}      
+              alt='logo'    
             />
           </Link>
           <div className='flex gap-8 h-24'>              

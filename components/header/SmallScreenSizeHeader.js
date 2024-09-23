@@ -25,7 +25,8 @@ export default function SmallScreenSizeHeader({ data }) {
             <Image
               src='/logo.png'
               width={60}
-              height={60}          
+              height={60}   
+              alt='logo'       
             />
           </Link>
         <RxHamburgerMenu onClick={click} className='h-12 w-12 cursor-pointer'></RxHamburgerMenu>

@@ -18,7 +18,7 @@ export default memo(function AboutTeam() {
             }}
         >
             <h2 className='text-xl md:text-2xl'>Takımla Tanışın</h2>
-            <p className='text-xs md:text-base'>Salesforce’un Türkiye'deki en güçlü iş ortağı olma vizyonuyla, bulut bilişim ve dijital dönüşüm çözümleri sunarak, müşterilerimizin iş süreçlerini baştan sona dijital dönüşümün gücüyle dönüştürüyoruz. Yalnızca dönüşüm sürecinde değil, Salesforce ekosisteminin gücüyle müşterilerimize sürdürülebilir başarı sağlayan ölçeklenebilir ve dinamik çözümler sunuyoruz. Dijital gelişim ve sürekli optimizasyon ile işlerini bir üst seviyeye taşımak isteyen firmalara stratejik danışmanlık sağlayarak, bulut teknolojilerinde güvenilir bir çözüm ortağı olarak yanlarındayız.</p>        
+            <p className='text-xs md:text-base'>{`Salesforce’un Türkiye'deki en güçlü iş ortağı olma vizyonuyla, bulut bilişim ve dijital dönüşüm çözümleri sunarak, müşterilerimizin iş süreçlerini baştan sona dijital dönüşümün gücüyle dönüştürüyoruz. Yalnızca dönüşüm sürecinde değil, Salesforce ekosisteminin gücüyle müşterilerimize sürdürülebilir başarı sağlayan ölçeklenebilir ve dinamik çözümler sunuyoruz. Dijital gelişim ve sürekli optimizasyon ile işlerini bir üst seviyeye taşımak isteyen firmalara stratejik danışmanlık sağlayarak, bulut teknolojilerinde güvenilir bir çözüm ortağı olarak yanlarındayız.`}</p>        
         </motion.div>
         <motion.div 
             className='px-2 md:px-8 border-l-2 border-black flex flex-col gap-2'
