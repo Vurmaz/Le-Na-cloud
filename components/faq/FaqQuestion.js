@@ -32,22 +32,20 @@ export default function FaqQuestion({ item, i, color, activeIndex, setActiveInde
                     >
                         <FaCaretDown className={`w-8 h-8`} /> 
                     </motion.div>            
-                </div>  
-                <AnimatePresence>
+                </div>                  
                     {
                         (activeIndex === i) 
                         &&
                         <motion.div 
-                            className='p-2 md:py-4 text-xs md:text-base text-start origin-top text-[--text]'
+                            className='py-2 px-8 text-xs md:text-base text-start origin-top text-[--text]'
                             style={{  borderColor:`var(--${color})` }}
                             initial={{ scaleY:0 }}
-                            animate={{ scaleY:1 }}                            
+                            animate={{ scaleY:1 }}                                                       
                             transition={{ duration:0.3, ease:'linear' }}
                         >
                             <p>{item.answer}</p>
                         </motion.div>                                                                     
-                    }                                     
-                </AnimatePresence>                                                          
+                    }                                                                                                              
             </div>
         </motion.div>
   )

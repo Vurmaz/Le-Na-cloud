@@ -1,11 +1,12 @@
 import { NextResponse } from "next/server";
-import services from '@/data.json'
+import services from '../../../.././data/services.json'
+
 export async function GET(request, context) {
 
   const { params } = context
 
   const data = services.filter((service) => service.name == params.serviceName)
-
+ 
   if(!params.serviceName) {
     return NextResponse.json({ message:"Failed to find service" }, { status:500 })
   }

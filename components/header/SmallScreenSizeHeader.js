@@ -20,7 +20,7 @@ export default function SmallScreenSizeHeader({ data }) {
     }
     
   return (
-    <div className='flex justify-between items-center flex-row px-8 py-2 md:hidden'>
+    <div className='flex justify-between items-center flex-row px-8 md:hidden h-full'>
           <Link href={'/'} className=' cursor-pointer'>
             <Image
               src='/logo.png'

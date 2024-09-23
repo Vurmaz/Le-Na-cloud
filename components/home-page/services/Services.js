@@ -6,7 +6,7 @@ import ServiceCard from './ServiceCard';
 export default function Services({ services }) {
 
   return (
-    <div className='h-max pt-16 my-32' id='home-service'>
+    <div className='h-max pt-8 mb-16' id='home-service'>
         <motion.h3 
             className='text-center text-3xl sm:text-4xl md:text-5xl p-4 text-[--primary]'
             initial={{ opacity:0 }}

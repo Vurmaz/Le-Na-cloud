@@ -13,7 +13,7 @@ export default function Hero() {
             height: "100vh",                      
         }}    
     >
-      <div className='flex flex-col-reverse md:grid md:grid-cols-2 h-auto md:h-5/6 px-16'>
+      <div className='flex flex-col-reverse md:grid md:grid-cols-2 h-auto md:h-5/6 sm:px-16'>
         <HeroText />
         <HeroImages />
       </div>        
