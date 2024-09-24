@@ -7,7 +7,6 @@ import Faq from "@/components/faq/Faq"
 import Footer from "@/components/footer/Footer"
 import { getService, getFaq } from '../../../libs/utils'
 import { notFound } from "next/navigation"
-import { Metadata } from 'next'
 
 export async function generateMetadata({ params }) {
   const { data } = await getService(params.servicename);
