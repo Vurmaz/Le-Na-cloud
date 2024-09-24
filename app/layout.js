@@ -19,14 +19,6 @@ openGraph: {
     url: 'le-na.cloud',
     title: 'Profesyonel Salesforce Hizmetleri | Le-Na cloud',
     description: 'Özelleştirilmiş Salesforce çözümleri ile işinizi bir üst seviyeye taşıyın.',
-    images: [
-      {
-        url: 'https://le-na.cloud/images/og-image.jpg',
-        width: 800,
-        height: 600,
-        alt: 'Salesforce Hizmetleri',
-      },
-    ],
   },
 }
 

@@ -1,16 +1,20 @@
 import React from 'react'
-import Image from 'next/image'
 import SingleProject from '@/components/singleProjectPage/SingleProject'
 import Footer from '@/components/footer/Footer'
 import { getProject } from '../../../libs/utils'
-
+import { notFound } from 'next/navigation'
+import Contact from '@/components/contact/Contact'
 
 export default async function SingleProjectPage({ params }) {
 
-    const { data } = await getProject(params.projectId)
+  const { data } = await getProject(params.projectId)
+  
+  if(!data[0]) {
+    notFound()
+  }
 
   return (
-    <div>
+    <div className='bg-[--light]'>
       {
         data.map((project) => {
           return(
@@ -18,6 +22,7 @@ export default async function SingleProjectPage({ params }) {
           )
         })
       }
+      <Contact id={'single-project-contact'} />
       <Footer color='white' />
     </div>
   )

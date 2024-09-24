@@ -3,7 +3,7 @@ import { useState } from 'react'
 import * as Form from '@radix-ui/react-form';
 import { motion } from 'framer-motion';
 
-export default function ContactForm() {
+export default function ContactForm({ isOpen, setIsOpen }) {
 
     const [message, setMessage] = useState('')
 
@@ -27,20 +27,19 @@ export default function ContactForm() {
                 body: JSON.stringify({
                     data
                 })      
+            })                   
+            setData({
+                name:'',
+                surname:'',
+                email:'',
+                telefon:'',
+                servis:'', 
             })  
-            setMessage('Mesajınız başarıyla görderildi')          
+            setIsOpen(true)              
         }
         catch(err){
-            setMessage(err.message)
-        }
-        
-        setData({
-            name:'',
-            surname:'',
-            email:'',
-            telefon:'',
-            servis:'', 
-        })
+            throw new Error(err)            
+        }        
     }
     const changeValue = (event) => {
         const value = event.target.value

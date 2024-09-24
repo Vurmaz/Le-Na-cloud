@@ -6,27 +6,52 @@ import Action from "@/components/service-page/Action"
 import Faq from "@/components/faq/Faq"
 import Footer from "@/components/footer/Footer"
 import { getService, getFaq } from '../../../libs/utils'
-import Head from 'next/head'
+import { notFound } from "next/navigation"
+import { Metadata } from 'next'
 
+export async function generateMetadata({ params }) {
+  const { data } = await getService(params.servicename);
+
+  if (!data[0]) {
+    return {
+      title: 'Servis Bulunamadı | Le-Na cloud',
+      description: 'Aradığınız servis bulunamadı.',
+    };
+  }
+  const service = data[0]
+  return {
+    title: `${service.name.charAt(0).toUpperCase() + service.name.slice(1)} | Le-Na cloud`,
+    description: service.title,
+    keywords: [
+      'Salesforce',
+      service.title,
+      (service.name.split('-').join(' ')),
+      'CRM çözümleri',
+      'bulut tabanlı CRM',
+    ],
+    openGraph: {
+      type: 'article',
+      url: `https://localhost:3000/services/${service.name}`,
+      title: `${service.name} | Le-Na cloud`,
+      description: service.description,
+    },
+  };
+}
 
 async function ServicesPage({ params }) {
   
   const { data } = await getService(params.servicename) 
+  
+  if(!data[0]) {
+    notFound()
+  }
+
   const FaqData = await getFaq() 
   
   const color = (data[0].name.split('-'))[0] 
-  console.log(data[0])
+  
   return (
-    <>
-      <Head>
-        <title>{data[0].name} | Le-Na cloud</title>
-        <meta name="description" content={data[0].description} />
-        <meta name="keywords" content={`'Salesforce', 'Salesforce hizmetleri', ${data[0].name},'CRM çözümleri','bulut tabanlı CRM'`} />
-        <meta property="og:type" content='article' />
-        <meta property="og:url" content={`https://le-na.cloud/services/${data[0].name}`} />
-        <meta property="og:title" content={data[0].title} />
-        <meta property="og:description" content={data[0].description} />        
-      </Head>    
+    <>   
       <div className="bg-[--light]">          
         <ServiceHero data={data[0]} color={color} />
         <Desc data={data[0]} color={color} />

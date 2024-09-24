@@ -1,11 +1,14 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import ContactForm from './Form'
 import FormText from './FormText'
 import { motion } from 'framer-motion'
+import Toaster from '../Toast'
 
 export default function Contact({ id }) {
   
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
     <div id={id} className='h-max md:h-screen grid grid-cols-1 md:grid-cols-2 p-8 gap-2 '>
         <motion.div 
@@ -25,8 +28,9 @@ export default function Contact({ id }) {
           viewport={{ once:true }} 
           transition={{ duration:0.6, ease:'easeInOut', delay:0.1 }}       
         >
-            <ContactForm />
+            <ContactForm isOpen={isOpen} setIsOpen={setIsOpen} />
         </motion.div>
+        <Toaster isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   )
 }

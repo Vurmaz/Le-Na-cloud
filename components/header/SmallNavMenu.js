@@ -51,15 +51,23 @@ export default function SmallNavMenu({ title, Icon, setIsOpen, setIsMenuOpen, is
       case 'İletişime Geçin' :
         if(pathname.includes('about')) {
             nav('about')
+            return
+        }
+        if(pathname.includes('655')) {
+          nav('single-project')
+          return
         }
         if(pathname.includes('projects')) {
             nav('project')
+            return
         }      
         if(pathname.includes('services')) {
           nav('service')
+          return
         }  
         if(pathname === '/') {
           nav('home')
+          return
         }
         break;
     }

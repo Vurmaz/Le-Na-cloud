@@ -4,12 +4,44 @@ import Link from 'next/link'
 import { MdOutlineExpandMore } from "react-icons/md";
 import Image from 'next/image';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import ServiceMenu from './ServiceMenu';
 
 export default function ScreenSizeHeader({ data }) {
 
   const [isServiceMenuOpen, setIsServiceMenuOpen] = useState(false)
+
+  const pathname = usePathname()
   
+  const nav = (path) => {       
+    const contact = document.getElementById(`${path}-contact`)
+    contact.scrollIntoView({ behavior:'smooth' })
+    return 
+  }
+
+  const click = () => {
+    if(pathname.includes('about')) {
+      nav('about')
+      return
+    }
+    if(pathname.includes('655')) {      
+      nav('single-project')
+      return
+    }
+    if(pathname.includes('projects')) {
+        nav('project')
+        return
+    }      
+    if(pathname.includes('services')) {
+      nav('service')
+      return
+    }  
+    if(pathname === '/') {
+      nav('home')
+      return
+    }    
+  }  
+
   return (
     <>
       <div className='md:flex items-center justify-between gap-8 w-full mx-auto hidden'>
@@ -48,10 +80,7 @@ export default function ScreenSizeHeader({ data }) {
               className='cursor-pointer border-2 p-2 px-4 rounded-full bg-[--primary] text-white text-base'
               whileHover={{ backgroundColor:'var(--text)' }}
               transition={{ duration:0.3, ease:'easeInOut' }}
-              onClick={()=> {
-                const contact = document.getElementById('home-contact')
-                contact.scrollIntoView({ behavior:'smooth' })
-              }}
+              onClick={click}
             >              
                 DEMO TALEBİ                          
             </motion.div>              
