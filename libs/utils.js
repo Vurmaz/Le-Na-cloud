@@ -1,5 +1,7 @@
+  const url = process.env.URL
+  
   export const getAboutData = async() => {        
-      const response = await fetch(`http://localhost:3000/api/getAbout`, {
+      const response = await fetch(`${url}/api/getAbout`, {
           method: 'GET',
           headers: {
           'Content-Type': 'application/json',
@@ -9,28 +11,28 @@
   }
 
   export const getProjects = async() => {
-    const response = await fetch(`http://localhost:3000/api/getProjects`, {
+    const response = await fetch(`${url}/api/getProjects`, {
       method:"GET",
     })
     return response.json()
   }
 
   export const getPrinciples = async() => {
-      const response = await fetch('http://localhost:3000/api/getPrinciples', {
+      const response = await fetch(`${url}/api/getPrinciples`, {
           method:'GET'
       })
       return await response.json()
   }  
 
   export const getFaq = async() => {
-    const response = await fetch(`http://localhost:3000/api/getFaq`, {
+    const response = await fetch(`${url}/api/getFaq`, {
       method:"GET",
     })
     return response.json()
 
   }  
   export const getProject = async(id) => {        
-    const response = await fetch(`http://localhost:3000/api/getProjects/${id}`, {
+    const response = await fetch(`${url}/api/getProjects/${id}`, {
         method: 'GET',
         headers: {
         'Content-Type': 'application/json',
@@ -40,14 +42,14 @@
     }
        
   export const getService = async(servicename) => {    
-    const response = await fetch(`http://localhost:3000/api/getService/${servicename}`, {
+    const response = await fetch(`${url}/api/getService/${servicename}`, {
       method:"GET",
     })
     return response.json()
   }
 
   export const getLogos = async() => {
-    const response = await fetch('http://localhost:3000/api/getLogos', {
+    const response = await fetch(`${url}/api/getLogos`, {
         method:'GET',
     })
     return response.json()
