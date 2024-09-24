@@ -1,11 +1,8 @@
-  const url = process.env.NEXT_PUBLIC_API_URL
+  const url = process.env.URL
   
   export const getAboutData = async() => {        
       const response = await fetch(`${url}/api/getAbout`, {
           method: 'GET',
-          headers: {
-          'Content-Type': 'application/json',
-          }
       })
           return await response.json()           
   }
@@ -34,9 +31,6 @@
   export const getProject = async(id) => {        
     const response = await fetch(`${url}/api/getProjects/${id}`, {
         method: 'GET',
-        headers: {
-        'Content-Type': 'application/json',
-        }
     })
         return await response.json()                      
     }

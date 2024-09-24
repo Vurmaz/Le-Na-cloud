@@ -14,14 +14,14 @@ export async function GET(request) {
             desc:"Bilgili ekipimizle size en iyi çözümleri sunmak için çalışıyoruz"            
         },
         {
-            name:"Mükemelliyetçilik",
+            name:"Mükemmeliyetçilik",
             icon:"CiStar",
             desc:"En iyi hizmeti alabilmeniz için mükemelliyetçi bir anlayışla çalışıyoruz"            
         },
         {
-            name:"İtetişim",
+            name:"İletişim",
             icon:"FaComments",
-            desc:"Sürekli iletişim kurarak aklınızdaki fikri uygulamaya çalııyoruz"            
+            desc:"Sürekli iletişim kurarak aklınızdaki fikri uygulamaya çalışıyoruz"            
         },        
 
     ]
