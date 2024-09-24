@@ -40,7 +40,6 @@ export async function GET() {
 export async function POST(request) {
     const { id }  = await request.json()
     const project = data.filter((item)=> item.id == id)
-    console.log(project)
     
     return NextResponse.json({ data:project }, { status:200 })
 }

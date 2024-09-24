@@ -1,4 +1,4 @@
-  const url = process.env.URL
+  const url = process.env.NEXT_PUBLIC_API_URL
   
   export const getAboutData = async() => {        
       const response = await fetch(`${url}/api/getAbout`, {

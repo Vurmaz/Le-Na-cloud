@@ -9,7 +9,7 @@ export default async function SingleProjectPage({ params }) {
 
   const { data } = await getProject(params.projectId)
   
-  if(!data[0]) {
+  if (!data) {
     notFound()
   }
 
