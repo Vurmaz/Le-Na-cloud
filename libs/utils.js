@@ -1,4 +1,4 @@
-  const url = process.env.URL
+  const url = process.env.SITE_URL
   
   export const getAboutData = async() => {        
       const response = await fetch(`${url}/api/getAbout`, {
