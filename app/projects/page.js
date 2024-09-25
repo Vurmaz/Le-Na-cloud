@@ -10,16 +10,16 @@ import ProjectsHero from '@/components/projects-page/ProjectsHero'
 
 export default async function ProjectPage() {
 
-  const { data } = await getProjects()
-  const principles = await getPrinciples()
+/*   const { data } = await getProjects()
+  const principles = await getPrinciples() */
   const faqData = await getFaq()
   
   return (
     <div className=''>     
         <ProjectsHero />
         <Schema />
-        <ProjectsHolder data={data} />
-        <ImageIcons data={principles.data.data} /> 
+{/*         <ProjectsHolder data={data} />
+        <ImageIcons data={principles.data.data} />  */}
         <Faq data={faqData.data} color='primary' />        
         <Contact id={'project-contact'} />
         <Footer color='var(--light)' />
