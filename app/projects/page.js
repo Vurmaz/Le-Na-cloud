@@ -13,7 +13,7 @@ export default async function ProjectPage() {
   const { data } = await getProjects()
   const principles = await getPrinciples()
   const faqData = await getFaq()
-    
+  
   return (
     <div className=''>     
         <ProjectsHero />
