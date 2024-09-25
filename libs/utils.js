@@ -45,14 +45,16 @@
   export const getPrinciples = async() => {
     try{
       const response = await fetch(`${url}/api/getPrinciples`, {
-          method:'GET'
+          method:'GET',
+          headers:{
+            "Content-Type": "application/json",
+          }          
       }) 
       const contentType = response.headers.get('content-type');
       if (contentType && contentType.includes('application/json')) {
         const data = await response.json();
-        return { data:data.data };
-      } else {
-        
+        return { data:data };
+      } else {        
         const text = await response.text();
         console.error('Non-JSON response:', text);
         return { data: [] }

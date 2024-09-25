@@ -2,7 +2,7 @@ import React from 'react'
 import IconRenderer from '../IconRenderer'
 
 export default function ImageIcons({ data }) {
-    
+    console.log(data)
   return (  
     <div 
         className='h-screen w-11/12 gap-4 lg:gap-8 flex flex-col md:flex-row items-center justify-center bg-image relative px-8 md:my-16'
@@ -15,7 +15,8 @@ export default function ImageIcons({ data }) {
         }}
     >
         {
-            data.map((item, i)=> {                
+            data.map((item, i)=> {   
+                console.log(item)             
                 return (
                     <div 
                         key={i}
