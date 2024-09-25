@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 
 export async function GET(request) {
    
-    const principles = [
+    const data = [
         {
             name:"Globallik",
             icon:"IoMdGlobe",
@@ -26,5 +26,5 @@ export async function GET(request) {
 
     ]
 
-     return NextResponse.json({ principles }, { status: 200 })
+     return NextResponse.json({ data }, { status: 200 })
 }
