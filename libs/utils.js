@@ -50,7 +50,7 @@
       const contentType = response.headers.get('content-type');
       if (contentType && contentType.includes('application/json')) {
         const data = await response.json();
-        return { data };
+        return { data:data.data };
       } else {
         
         const text = await response.text();

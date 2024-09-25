@@ -29,7 +29,7 @@ export default memo(function Schema() {
             desc:'Dijitalleşme tamamlandıkça işler hızlanır, ancak dönüşüm devam eder. Şirket büyüdükçe, Salesforce yeni özelliklerle desteklenir ve süreçler sürekli optimize edilir.'
         },        
     ]
-
+    
   return (
 
     <div className='px-4 md:px-16 w-5/6 sm:w-11/12 md:w-5/6 mx-auto py-16 flex flex-col gap-8'>

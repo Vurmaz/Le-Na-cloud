@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function ProjectsHolder({ data }) {
+  
   return (
     <div className='h-max md:h-screen '>
         <h1 className='text-center text-2xl md:text-5xl pt-4 pb-8 text-gradient font-semibold'>Müşterilerimize hazırladığımız projelerimiz</h1>
