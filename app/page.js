@@ -12,7 +12,7 @@ import { getFaq } from "@/libs/utils";
 export default async function Home() {
 
 const FaqData = await getFaq() 
-
+  console.log(process.env.SITE_URL)
   return (
     <main className="">      
       <Hero />
