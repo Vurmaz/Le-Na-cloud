@@ -46,5 +46,6 @@
     const response = await fetch(`${url}/api/getLogos`, {
         method:'GET',
     })
+    console.log(url)
     return response.json()
   }  
