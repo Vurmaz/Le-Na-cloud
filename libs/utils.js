@@ -53,7 +53,7 @@
       const contentType = response.headers.get('content-type');
       if (contentType && contentType.includes('application/json')) {
         const data = await response.json();
-        return { data:data };
+        return { data:data.data };
       } else {        
         const text = await response.text();
         console.error('Non-JSON response:', text);
