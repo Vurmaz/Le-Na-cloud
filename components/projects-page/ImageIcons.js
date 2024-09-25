@@ -1,7 +1,7 @@
 import React from 'react'
 import IconRenderer from '../IconRenderer'
 
-export default function ImageIcons({ principles }) {
+export default function ImageIcons({ data }) {
 
   return (
     <div 
@@ -15,7 +15,7 @@ export default function ImageIcons({ principles }) {
         }}
     >
         {
-            principles.map((item, i)=> {
+            data.map((item, i)=> {
                 return (
                     <div 
                         key={i}

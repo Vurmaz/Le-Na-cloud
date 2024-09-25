@@ -4,16 +4,15 @@
     try{
       const response = await fetch(`${url}/api/getAbout`, {
           method: 'GET',
-      })  
+      })        
       const contentType = response.headers.get('content-type');
       if (contentType && contentType.includes('application/json')) {
-        const data = await response.json();
-        return { data };
-      } else {
-        // If it's not JSON, log the response text (probably an HTML error page)
+        const data = await response.json();        
+        return { data:data.data };
+      } else {        
         const text = await response.text();
         console.error('Non-JSON response:', text);
-        return { data: [] }; // Return an empty data array or handle gracefully
+        return { data: [] }
       }
     }
     catch(err){
@@ -30,12 +29,11 @@
       const contentType = response.headers.get('content-type');
       if (contentType && contentType.includes('application/json')) {
         const data = await response.json();
-        return { data };
-      } else {
-        // If it's not JSON, log the response text (probably an HTML error page)
+        return { data:data.data };
+      } else {        
         const text = await response.text();
         console.error('Non-JSON response:', text);
-        return { data: [] }; // Return an empty data array or handle gracefully
+        return { data: [] }
       }
     }
     catch(err){
@@ -54,15 +52,15 @@
         const data = await response.json();
         return { data };
       } else {
-        // If it's not JSON, log the response text (probably an HTML error page)
+        
         const text = await response.text();
         console.error('Non-JSON response:', text);
-        return { data: [] }; // Return an empty data array or handle gracefully
+        return { data: [] }
       }
     }
     catch(err){
       console.error('Error fetching projects:', error);
-      return { data: [] }; // Return fallback data on error
+      return { data: [] }
     }      
   }  
 
@@ -70,21 +68,24 @@
     try{
       const response = await fetch(`${url}/api/getFaq`, {
         method:"GET",
+        headers:{
+           "Content-Type": "application/json",
+        }
       })
-      const contentType = response.headers.get('content-type');
+      const contentType = response.headers.get('content-type');      
       if (contentType && contentType.includes('application/json')) {
-        const data = await response.json();
-        return { data };
+        const data = await response.json();        
+        return { data:data.data };
       } else {
-        // If it's not JSON, log the response text (probably an HTML error page)
+        
         const text = await response.text();
         console.error('Non-JSON response:', text);
-        return { data: [] }; // Return an empty data array or handle gracefully
+        return { data: [] }
       }
     }
     catch(err){
       console.error('Error fetching projects:', error);
-      return { data: [] }; // Return fallback data on error
+      return { data: [] }
     }    
   }  
 
@@ -96,17 +97,16 @@
       const contentType = response.headers.get('content-type');
       if (contentType && contentType.includes('application/json')) {
         const data = await response.json();
-        return { data };
-      } else {
-        // If it's not JSON, log the response text (probably an HTML error page)
+        return { data:data.data };
+      } else {        
         const text = await response.text();
         console.error('Non-JSON response:', text);
-        return { data: [] }; // Return an empty data array or handle gracefully
+        return { data: [] };
       }
     }
     catch(err){
       console.error('Error fetching projects:', error);
-      return { data: [] }; // Return fallback data on error
+      return { data: [] };
     }                    
     }
        
@@ -118,12 +118,11 @@
       const contentType = response.headers.get('content-type');
       if (contentType && contentType.includes('application/json')) {
         const data = await response.json();
-        return { data };
-      } else {
-        // If it's not JSON, log the response text (probably an HTML error page)
+        return { data:data.data };
+      } else {        
         const text = await response.text();
         console.error('Non-JSON response:', text);
-        return { data: [] }; // Return an empty data array or handle gracefully
+        return { data: [] }
       }
     }
     catch(err){
@@ -140,16 +139,15 @@
       const contentType = response.headers.get('content-type');
       if (contentType && contentType.includes('application/json')) {
         const data = await response.json();
-        return { data };
-      } else {
-        // If it's not JSON, log the response text (probably an HTML error page)
+        return { data:data.data };
+      } else {       
         const text = await response.text();
         console.error('Non-JSON response:', text);
-        return { data: [] }; // Return an empty data array or handle gracefully
+        return { data: [] }
       }
     }
     catch(err){
-      console.error('Error fetching projects:', error);
-      return { data: [] }; // Return fallback data on error
+      console.error('Error fetching projects:', error)
+      return { data: [] }
     }
   }  
