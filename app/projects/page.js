@@ -13,13 +13,13 @@ export default async function ProjectPage() {
  /*  const { data } = await getProjects() */
   const principles = await getPrinciples()
   const faqData = await getFaq()
-  
+  console.log(principles.data.data)
   return (
     <div className=''>     
         <ProjectsHero />
         <Schema />
        {/*  <ProjectsHolder data={data} /> */}
-        <ImageIcons data={principles.data.data} /> 
+        <ImageIcons data={principles.data} /> 
         <Faq data={faqData.data} color='primary' />        
         <Contact id={'project-contact'} />
         <Footer color='var(--light)' />
