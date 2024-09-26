@@ -12,7 +12,7 @@ import { getFaq } from "@/libs/utils";
 export default async function Home() {
 
 const FaqData = await getFaq() 
-  console.log(process.env.SITE_URL)
+  
   return (
     <main className="">      
       <Hero />
@@ -23,7 +23,7 @@ const FaqData = await getFaq()
       <About />
       <ServiceCall />  
       <Faq data={FaqData.data} color={`primary`}/>              
-      <Contact id={'home-contact'}/>
+      <Contact id={'home-contact'} color='light' />
       <Footer color='var(--light)' />
     </main>
   );

@@ -51,6 +51,7 @@
           }          
       }) 
       const contentType = response.headers.get('content-type');
+      console.log(contentType)
       if (contentType && contentType.includes('application/json')) {
         const data = await response.json();
         return { data:data.data };

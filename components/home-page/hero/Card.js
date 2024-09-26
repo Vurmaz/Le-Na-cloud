@@ -8,6 +8,7 @@ export default function Card({ Icon, color, name }) {
     
   const router = useRouter()
   let href = (name.split(' ').join('-')).toLowerCase()
+  
   return (
     <motion.div 
       className='flex flex-col items-center justify-center p-4 cursor-pointer'

@@ -17,7 +17,7 @@ export default function ServiceMenu({ data, setIsServiceMenuOpen }) {
             duration:0.5, ease:'easeInOut', delay:0.2
         }}
     >
-      <div className='grid grid-cols-3 grid-rows-3 gap-8 p-4 text-white w-4/6 mx-auto'>
+      <div className='grid grid-cols-3 grid-rows-3 gap-2 p-4 text-white w-4/6 mx-auto'>
           {
             data.map((item, i) => {            
                let href = (item.name.split(' ').join('-')).toLowerCase()

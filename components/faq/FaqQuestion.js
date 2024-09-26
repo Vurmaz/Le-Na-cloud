@@ -1,6 +1,6 @@
 'use client'
 import { FaCaretDown } from "react-icons/fa";
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 export default function FaqQuestion({ item, i, color, activeIndex, setActiveIndex }) {
 

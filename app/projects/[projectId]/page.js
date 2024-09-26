@@ -22,7 +22,7 @@ export default async function SingleProjectPage({ params }) {
           )
         })
       }
-      <Contact id={'single-project-contact'} />
+      <Contact id={'single-project-contact'} color='light' />
       <Footer color='white' />
     </div>
   )

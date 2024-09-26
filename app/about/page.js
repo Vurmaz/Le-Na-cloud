@@ -32,7 +32,7 @@ export default async function AboutPage() {
             }            
         </div>
         <Faq data={faqData.data} color='primary' />
-        <Contact id={'about-contact'} /> 
+        <Contact id={'about-contact'} color='light' /> 
         <Footer color='var(--light)' />     
     </div>
 

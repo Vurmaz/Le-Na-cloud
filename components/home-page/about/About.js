@@ -8,7 +8,7 @@ export default async function About() {
     
   return (
     <div 
-        className='p-8 flex flex-col gap-16 h-max md:mt-32'        
+        className='p-4 py-16 flex flex-col gap-16 h-max md:mt-32'        
         id='home-about'
     >
         {

@@ -60,7 +60,7 @@ async function ServicesPage({ params }) {
         <WhyService data={data[0]} color={color} />
         <Faq data={FaqData.data} color={color} />    
         <div className=''>
-          <Contact color={color} id={'service-contact'} />        
+          <Contact color='white' id={'service-contact'} />        
         </div>
         <Footer color='white' />
       </div>      

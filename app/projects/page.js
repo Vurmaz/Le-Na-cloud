@@ -21,7 +21,7 @@ export default async function ProjectPage() {
         <ProjectsHolder data={data} />
        {/*  <ImageIcons data={principles.data} />  */}
         <Faq data={faqData.data} color='primary' />        
-        <Contact id={'project-contact'} />
+        <Contact id={'project-contact'} color='light' />
         <Footer color='var(--light)' />
     </div>
   )
