@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 export default function AboutActionText() {
   return (
     <motion.div 
-        className='col-span-2 order-first	 bg-[--primary] text-white pt-2 md:pt-8 flex flex-col gap-2 rounded-lg p-4 md:p-0'
+        className='col-span-2 order-first md:order-none bg-[--primary] text-white pt-2 md:pt-8 flex flex-col gap-2 rounded-lg p-4 md:p-0'
         viewport={{ once:true }}
         initial={{ y:100, opacity:0 }}
         whileInView={{ y:0, opacity:1 }}
