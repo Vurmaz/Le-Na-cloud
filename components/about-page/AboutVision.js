@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 export default function AboutVision({ item }) {
   
   return ( 
-    <div className='grid grid-cols-3 gap-8 md:px-4 lg:px-32 h-auto md:h-max py-32'>
+    <div className='grid grid-cols-3 gap-8 md:px-4 lg:px-32 h-auto md:h-max py-4 md:py-32'>
       <motion.div 
         className='flex justify-start p-4'
         viewport={{ once:true }}
