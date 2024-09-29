@@ -2,7 +2,12 @@ import React from 'react'
 import ServiceHeroButton from './ServiceHeroButton'
 import ServiceHeroText from './ServiceHeroText'
 import ServiceHeroSvg from '../SvgHolder'
-import Svg from '../.././public/ai.svg'
+import dynamic from 'next/dynamic'
+
+const LazySVG = dynamic(() => import('../.././public/ai.svg'), {
+  loading: () => <div className='bg-grey w-48 h-48'></div>,
+});
+
 
 export default function ServiceHero({ data, color }) {
 
@@ -16,7 +21,7 @@ export default function ServiceHero({ data, color }) {
             </div>
             <div style={{ color:`var(--${color}`}} className="mx-auto my-auto w-full">
               <ServiceHeroSvg 
-                  Icon={Svg}             
+                  Icon={LazySVG}             
               />
             </div>            
       </div>

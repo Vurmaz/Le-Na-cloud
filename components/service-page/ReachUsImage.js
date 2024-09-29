@@ -1,7 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import SvgHolder from '../SvgHolder'
-import Svg from '../.././public/ladder.svg'
+import dynamic from 'next/dynamic'
+
+const LazySVG = dynamic(() => import('../.././public/ladder.svg'), {
+  loading: () => <div className='bg-grey w-48 h-48'></div>,
+})
 
 export default function ReachUsImage({ color }) {
   return (
@@ -14,7 +18,7 @@ export default function ReachUsImage({ color }) {
         viewport={{ once:true }} 
     >
         <SvgHolder
-            Icon={Svg}
+            Icon={LazySVG}
             color={`var(--${color})`}
             alt='service' 
             className=''               
