@@ -2,7 +2,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-export default function Reasons({ reason, color }) {
+export default function DescReasons({ reason, color }) {
 
   return (
     <motion.div 

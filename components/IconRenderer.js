@@ -17,6 +17,10 @@ const ICONS = {
   GrOptimize: lazy(() => import("react-icons/gr").then((mod) => ({ default: mod.GrOptimize }))),
   MdSelfImprovement: lazy(() => import("react-icons/md").then((mod) => ({ default: mod.MdSelfImprovement }))),
   TbUserScreen: lazy(() => import("react-icons/tb").then((mod) => ({ default: mod.TbUserScreen }))),
+  MdOutlineSecurity: lazy(() => import("react-icons/md").then((mod) => ({ default: mod.MdOutlineSecurity }))),
+  MdSmartToy: lazy(() => import("react-icons/md").then((mod) => ({ default: mod.MdSmartToy }))),
+  GiScales: lazy(() => import("react-icons/gi").then((mod) => ({ default: mod.GiScales }))),
+  BiSupport: lazy(() => import("react-icons/bi").then((mod) => ({ default: mod.BiSupport }))),
 };
 
 export default memo(function IconRenderer({ iconName, color, ...props }) {

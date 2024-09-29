@@ -6,7 +6,7 @@
   "introduction": "İşletmenizin büyümesini hızlandırmak, satış süreçlerinizi daha verimli hale getirmek ve müşteri ilişkilerinizi derinleştirmek mi istiyorsunuz? Salesforce'un sunduğu Sales Cloud tam da aradığınız çözüm!",
   "description": "Satış ekiplerinin daha akıllıca çalışmasını, satış fırsatlarını daha iyi yönetmesini ve sonuç olarak daha fazla satış yapmasını sağlayan lider bir CRM platformudur.",
   "reasons": [
-    {
+    {      
       "title": "360 Derecelik Müşteri Görünürlüğü",
       "description": "Sales Cloud, müşterileriniz hakkında derinlemesine bilgi sağlayarak, müşteri etkileşimlerini kişiselleştirmenize ve her bir satış fırsatını daha iyi değerlendirmenize yardımcı olur. Müşterilerinizin ihtiyaçlarını daha iyi anlamanızı sağlayan bu bütünsel yaklaşım, müşteri memnuniyetini artırırken satışları da hızlandırır."
     },
@@ -40,18 +40,22 @@
     "description": "Sadece bir CRM çözümü değil, aynı zamanda işletmenizin büyümesini destekleyen güçlü bir satış platformudur. Daha iyi müşteri ilişkileri, daha verimli satış süreçleri ve daha yüksek satış performansı için Sales Cloud'u tercih edin!",
     "benefits": [
         {
+          "icon":"MdSmartToy",
           "title":"Kolay Kullanım",
           "desc":"Kullanıcı dostu arayüzü sayesinde, ekipleriniz Sales Cloud'u hızla kullanmaya başlayabilir."
         },     
         {
+          "icon":"MdOutlineSecurity",
           "title":"Güvenlik",
           "desc":"Sales Cloud, dünya çapında güvenilirlik ve veri güvenliği sunar."
         },         
         {
+          "icon":"GiScales",
           "title":"Ölçeklenebilirlik",
           "desc":"İster küçük bir ekip olun, ister büyük bir kuruluş, Sales Cloud işletmenizin büyümesine ayak uydurur."
         },     
         {
+          "icon":"BiSupport",
           "title":"Gelişmiş Destek",
           "desc":"Sales Cloud sunduğu destek hizmetleriyle her zaman yanınızdayız."
         }                             
@@ -100,20 +104,24 @@
     "description": "Müşteri hizmetleri ekiplerinizin verimliliğini artıran ve müşteri memnuniyetini en üst düzeye çıkaran kapsamlı bir CRM çözümüdür. Müşteri sadakati oluşturmak ve destek süreçlerinizi iyileştirmek için Service Cloud'u tercih edin!",
     "benefits": [
         {
+          "icon":"MdSmartToy",
           "title":"Kolay Kullanım",
-          "desc":"Kullanıcı dostu arayüzü sayesinde, ekipleriniz Service Cloud'u hızla kullanmaya başlayabilir."
+          "desc":"Kullanıcı dostu arayüzü sayesinde, ekipleriniz Sales Cloud'u hızla kullanmaya başlayabilir."
         },     
         {
+          "icon":"MdOutlineSecurity",
           "title":"Güvenlik",
-          "desc":"Service Cloud, dünya çapında güvenilirlik ve veri güvenliği sunar."
+          "desc":"Sales Cloud, dünya çapında güvenilirlik ve veri güvenliği sunar."
         },         
         {
+          "icon":"GiScales",
           "title":"Ölçeklenebilirlik",
-          "desc":"İster küçük bir ekip olun, ister büyük bir kuruluş, Service Cloud işletmenizin büyümesine ayak uydurur."
+          "desc":"İster küçük bir ekip olun, ister büyük bir kuruluş, Sales Cloud işletmenizin büyümesine ayak uydurur."
         },     
         {
+          "icon":"BiSupport",
           "title":"Gelişmiş Destek",
-          "desc":"Service Cloud sunduğu destek hizmetleriyle her zaman yanınızdayız."
+          "desc":"Sales Cloud sunduğu destek hizmetleriyle her zaman yanınızdayız."
         }                             
     ],
     "call_to_action": "Service Cloud ile müşteri hizmetlerinizi güçlendirin, müşteri memnuniyetinizi artırın ve işinizi büyütün. Daha fazla bilgi almak için hemen bizimle iletişime geçin ve işletmenizi geleceğe taşıyacak bu güçlü CRM çözümünü keşfedin!"
@@ -160,20 +168,24 @@
     "description": "Pazarlama kampanyalarınızı güçlendiren, müşteri etkileşimlerini kişiselleştiren ve dönüşüm oranlarını artıran kapsamlı bir dijital pazarlama çözümüdür. Marka bilinirliğinizi artırmak ve pazarlama yatırımlarınızın geri dönüşünü maksimize etmek için Marketing Cloud'u tercih edin!",
     "benefits": [
         {
+          "icon":"MdSmartToy",
           "title":"Kolay Kullanım",
-          "desc":"Kullanıcı dostu arayüzü sayesinde, ekipleriniz Marketing Cloud'u hızla kullanmaya başlayabilir."
+          "desc":"Kullanıcı dostu arayüzü sayesinde, ekipleriniz Sales Cloud'u hızla kullanmaya başlayabilir."
         },     
         {
+          "icon":"MdOutlineSecurity",
           "title":"Güvenlik",
-          "desc":"Marketing Cloud, dünya çapında güvenilirlik ve veri güvenliği sunar."
+          "desc":"Sales Cloud, dünya çapında güvenilirlik ve veri güvenliği sunar."
         },         
         {
+          "icon":"GiScales",
           "title":"Ölçeklenebilirlik",
-          "desc":"İster küçük bir ekip olun, ister büyük bir kuruluş, Marketing Cloud işletmenizin büyümesine ayak uydurur."
+          "desc":"İster küçük bir ekip olun, ister büyük bir kuruluş, Sales Cloud işletmenizin büyümesine ayak uydurur."
         },     
         {
+          "icon":"BiSupport",
           "title":"Gelişmiş Destek",
-          "desc":"Marketing Cloud sunduğu destek hizmetleriyle her zaman yanınızdayız."
+          "desc":"Sales Cloud sunduğu destek hizmetleriyle her zaman yanınızdayız."
         }                             
     ],
     "call_to_action": "Marketing Cloud ile pazarlama stratejinizi güçlendirin, müşteri memnuniyetinizi artırın ve işinizi büyütün. Daha fazla bilgi almak için hemen bizimle iletişime geçin ve işletmenizi geleceğe taşıyacak bu güçlü dijital pazarlama çözümünü keşfedin!"
@@ -220,20 +232,24 @@
     "description": "E-ticaretinizi güçlendiren, müşteri deneyimlerini kişiselleştiren ve satışlarınızı artıran kapsamlı bir dijital ticaret platformudur. Dijital satışlarınızı artırmak ve markanızı büyütmek için Commerce Cloud'u tercih edin!",
     "benefits": [
         {
+          "icon":"MdSmartToy",
           "title":"Kolay Kullanım",
-          "desc":"Kullanıcı dostu arayüzü sayesinde, ekipleriniz Commerce Cloud'u hızla kullanmaya başlayabilir."
+          "desc":"Kullanıcı dostu arayüzü sayesinde, ekipleriniz Sales Cloud'u hızla kullanmaya başlayabilir."
         },     
         {
+          "icon":"MdOutlineSecurity",
           "title":"Güvenlik",
-          "desc":"Commerce Cloud, dünya çapında güvenilirlik ve veri güvenliği sunar."
+          "desc":"Sales Cloud, dünya çapında güvenilirlik ve veri güvenliği sunar."
         },         
         {
+          "icon":"GiScales",
           "title":"Ölçeklenebilirlik",
-          "desc":"İster küçük bir ekip olun, ister büyük bir kuruluş, Commerce Cloud işletmenizin büyümesine ayak uydurur."
+          "desc":"İster küçük bir ekip olun, ister büyük bir kuruluş, Sales Cloud işletmenizin büyümesine ayak uydurur."
         },     
         {
+          "icon":"BiSupport",
           "title":"Gelişmiş Destek",
-          "desc":"Commerce Cloud sunduğu destek hizmetleriyle her zaman yanınızdayız."
+          "desc":"Sales Cloud sunduğu destek hizmetleriyle her zaman yanınızdayız."
         }                             
     ],
     "call_to_action": "Commerce Cloud ile e-ticaret stratejinizi güçlendirin, müşteri memnuniyetinizi artırın ve işinizi büyütün. Daha fazla bilgi almak için hemen bizimle iletişime geçin ve işletmenizi geleceğe taşıyacak bu güçlü dijital ticaret çözümünü keşfedin!"
@@ -280,20 +296,24 @@
     "description": "Verilerinizi işlemek, öngörüler elde etmek ve iş süreçlerinizi optimize etmek için güçlü bir yapay zeka çözümüdür. İşinizi geleceğe taşıyacak akıllı kararlar almak için Einstein AI'ı tercih edin!",
     "benefits": [
         {
+          "icon":"MdSmartToy",
           "title":"Kolay Kullanım",
-          "desc":"Kullanıcı dostu arayüzü sayesinde, ekipleriniz Einstein AI'ı hızla kullanmaya başlayabilir."
+          "desc":"Kullanıcı dostu arayüzü sayesinde, ekipleriniz Sales Cloud'u hızla kullanmaya başlayabilir."
         },     
         {
+          "icon":"MdOutlineSecurity",
           "title":"Güvenlik",
-          "desc":"Einstein AI, dünya çapında güvenilirlik ve veri güvenliği sunar."
+          "desc":"Sales Cloud, dünya çapında güvenilirlik ve veri güvenliği sunar."
         },         
         {
+          "icon":"GiScales",
           "title":"Ölçeklenebilirlik",
-          "desc":"İster küçük bir ekip olun, ister büyük bir kuruluş, Einstein AI işletmenizin büyümesine ayak uydurur."
+          "desc":"İster küçük bir ekip olun, ister büyük bir kuruluş, Sales Cloud işletmenizin büyümesine ayak uydurur."
         },     
         {
+          "icon":"BiSupport",
           "title":"Gelişmiş Destek",
-          "desc":"Einstein AI sunduğu destek hizmetleriyle her zaman yanınızdayız."
+          "desc":"Sales Cloud sunduğu destek hizmetleriyle her zaman yanınızdayız."
         }                             
     ],
     "call_to_action": "Einstein AI ile iş stratejinizi güçlendirin, verimliliğinizi artırın ve geleceğe hazır olun. Daha fazla bilgi almak için hemen bizimle iletişime geçin ve işletmenizi yapay zeka ile tanıştıracak bu güçlü çözümü keşfedin!"
@@ -340,20 +360,24 @@
     "description": "Verilerinizi anlamlandırmanızı sağlayan, güçlü ve kullanıcı dostu bir veri görselleştirme platformudur. İşinizi veri odaklı kararlarla büyütmek için Tableau'yu tercih edin!",
     "benefits": [
         {
+          "icon":"MdSmartToy",
           "title":"Kolay Kullanım",
-          "desc":"Kullanıcı dostu arayüzü sayesinde, ekipleriniz Tableau'u hızla kullanmaya başlayabilir."
+          "desc":"Kullanıcı dostu arayüzü sayesinde, ekipleriniz Sales Cloud'u hızla kullanmaya başlayabilir."
         },     
         {
+          "icon":"MdOutlineSecurity",
           "title":"Güvenlik",
-          "desc":"Tableau, dünya çapında güvenilirlik ve veri güvenliği sunar."
+          "desc":"Sales Cloud, dünya çapında güvenilirlik ve veri güvenliği sunar."
         },         
         {
+          "icon":"GiScales",
           "title":"Ölçeklenebilirlik",
-          "desc":"İster küçük bir ekip olun, ister büyük bir kuruluş, Tableau işletmenizin büyümesine ayak uydurur."
+          "desc":"İster küçük bir ekip olun, ister büyük bir kuruluş, Sales Cloud işletmenizin büyümesine ayak uydurur."
         },     
         {
+          "icon":"BiSupport",
           "title":"Gelişmiş Destek",
-          "desc":"Tableau sunduğu destek hizmetleriyle her zaman yanınızdayız."
+          "desc":"Sales Cloud sunduğu destek hizmetleriyle her zaman yanınızdayız."
         }                             
     ],
     "call_to_action": "Tableau ile veri analitiği stratejinizi güçlendirin, içgörüler elde edin ve işinizi büyütün. Daha fazla bilgi almak için hemen bizimle iletişime geçin ve işletmenizi veri güdümlü bir geleceğe taşıyacak bu güçlü çözümü keşfedin!"
@@ -400,20 +424,24 @@
     "description": "İşletmenizin entegrasyon ihtiyaçlarını karşılayan, güvenli, esnek ve güçlü bir platformdur. İş süreçlerinizi optimize etmek, verilerinizi entegre etmek ve dijital dönüşümünüzü hızlandırmak için MuleSoft'u tercih edin!",
     "benefits": [
         {
+          "icon":"MdSmartToy",
           "title":"Kolay Kullanım",
-          "desc":"Kullanıcı dostu arayüzü sayesinde, ekipleriniz MuleSoft'u hızla kullanmaya başlayabilir."
+          "desc":"Kullanıcı dostu arayüzü sayesinde, ekipleriniz Sales Cloud'u hızla kullanmaya başlayabilir."
         },     
         {
+          "icon":"MdOutlineSecurity",
           "title":"Güvenlik",
-          "desc":"MuleSoft, dünya çapında güvenilirlik ve veri güvenliği sunar."
+          "desc":"Sales Cloud, dünya çapında güvenilirlik ve veri güvenliği sunar."
         },         
         {
+          "icon":"GiScales",
           "title":"Ölçeklenebilirlik",
-          "desc":"İster küçük bir ekip olun, ister büyük bir kuruluş, MuleSoft işletmenizin büyümesine ayak uydurur."
+          "desc":"İster küçük bir ekip olun, ister büyük bir kuruluş, Sales Cloud işletmenizin büyümesine ayak uydurur."
         },     
         {
+          "icon":"BiSupport",
           "title":"Gelişmiş Destek",
-          "desc":"MuleSoft sunduğu destek hizmetleriyle her zaman yanınızdayız."
+          "desc":"Sales Cloud sunduğu destek hizmetleriyle her zaman yanınızdayız."
         }                             
     ],
     "call_to_action": "MuleSoft ile entegrasyon stratejinizi güçlendirin, iş süreçlerinizi optimize edin ve dijital dönüşümünüzü hızlandırın. Daha fazla bilgi almak için hemen bizimle iletişime geçin ve işletmenizi geleceğe taşıyacak bu güçlü çözümü keşfedin!"
@@ -460,20 +488,24 @@
     "description": "Slack, ekiplerinizin daha verimli çalışmasını sağlayan, iletişimi güçlendiren ve iş süreçlerini hızlandıran kapsamlı bir işbirliği platformudur. İletişiminizi güçlendirmek ve işbirliğini artırmak için Slack'i tercih edin!",
     "benefits": [
         {
+          "icon":"MdSmartToy",
           "title":"Kolay Kullanım",
-          "desc":"Kullanıcı dostu arayüzü sayesinde, ekipleriniz Slack'i hızla kullanmaya başlayabilir."
+          "desc":"Kullanıcı dostu arayüzü sayesinde, ekipleriniz Sales Cloud'u hızla kullanmaya başlayabilir."
         },     
         {
+          "icon":"MdOutlineSecurity",
           "title":"Güvenlik",
-          "desc":"Slack, dünya çapında güvenilirlik ve veri güvenliği sunar."
+          "desc":"Sales Cloud, dünya çapında güvenilirlik ve veri güvenliği sunar."
         },         
         {
+          "icon":"GiScales",
           "title":"Ölçeklenebilirlik",
-          "desc":"İster küçük bir ekip olun, ister büyük bir kuruluş, Slack işletmenizin büyümesine ayak uydurur."
+          "desc":"İster küçük bir ekip olun, ister büyük bir kuruluş, Sales Cloud işletmenizin büyümesine ayak uydurur."
         },     
         {
+          "icon":"BiSupport",
           "title":"Gelişmiş Destek",
-          "desc":"Slack’in sunduğu destek hizmetleriyle her zaman yanınızdayız."
+          "desc":"Sales Cloud sunduğu destek hizmetleriyle her zaman yanınızdayız."
         }                             
     ],
     "call_to_action": "Slack ile işbirliği stratejinizi güçlendirin, ekiplerinizi bağlayın ve projelerinizi hızlandırın. Daha fazla bilgi almak için hemen bizimle iletişime geçin ve işletmenizi geleceğe taşıyacak bu güçlü iletişim çözümünü keşfedin!"
@@ -527,22 +559,26 @@
     "title": "Neden Data Cloud?",
     "description": "Data Cloud, verilerinizi güvenli, ölçeklenebilir ve esnek bir şekilde yönetmenizi sağlayan kapsamlı bir veri yönetimi platformudur. Verilerinizi daha iyi yönetmek, içgörüler elde etmek ve iş süreçlerinizi optimize etmek için Data Cloud'u tercih edin!",
     "benefits": [
-      {
-        "title":"Kolay Kullanım",
-        "desc":"Kullanıcı dostu arayüzü sayesinde, ekipleriniz Data Cloud'u hızla kullanmaya başlayabilir."
-      },
-      {
-        "title":"Güvenlik",
-        "desc":"Data Cloud, dünya çapında güvenilirlik ve veri güvenliği sunar."
-      },
-      {
-        "title":"Ölçeklenebilirlik",
-        "desc":"İster küçük bir işletme olun, ister büyük bir kuruluş, Data Cloud işletmenizin büyümesine ayak uydurur."
-      },
-      {
-        "title":"Gelişmiş Destek",
-        "desc":"Salesforce’un sunduğu destek hizmetleriyle her zaman yanınızdayız."
-      }
+        {
+          "icon":"MdSmartToy",
+          "title":"Kolay Kullanım",
+          "desc":"Kullanıcı dostu arayüzü sayesinde, ekipleriniz Sales Cloud'u hızla kullanmaya başlayabilir."
+        },     
+        {
+          "icon":"MdOutlineSecurity",
+          "title":"Güvenlik",
+          "desc":"Sales Cloud, dünya çapında güvenilirlik ve veri güvenliği sunar."
+        },         
+        {
+          "icon":"GiScales",
+          "title":"Ölçeklenebilirlik",
+          "desc":"İster küçük bir ekip olun, ister büyük bir kuruluş, Sales Cloud işletmenizin büyümesine ayak uydurur."
+        },     
+        {
+          "icon":"BiSupport",
+          "title":"Gelişmiş Destek",
+          "desc":"Sales Cloud sunduğu destek hizmetleriyle her zaman yanınızdayız."
+        }                             
     ],
     "call_to_action": "Data Cloud ile veri stratejinizi güçlendirin, içgörüler elde edin ve işinizi büyütün. Daha fazla bilgi almak için hemen bizimle iletişime geçin ve işletmenizi geleceğe taşıyacak bu güçlü veri yönetimi çözümünü keşfedin!"
   }

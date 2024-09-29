@@ -1,6 +1,6 @@
 import React from 'react'
-import HeroButton from './HeroButton'
-import ServiceHeroSvg from './ServiceHeroSvg'
+import ServiceHeroButton from './ServiceHeroButton'
+import ServiceHeroSvg from '../SvgHolder'
 import Svg from '../.././public/ai.svg'
 
 export default function ServiceHero({ data, color }) {
@@ -12,14 +12,13 @@ export default function ServiceHero({ data, color }) {
             <div className="flex flex-col gap-8 items-start md:items-start justify-center px-8 text-[--text]">                
                 <h1 className='text-2xl md:text-2xl lg:text-3xl xl:text-4xl text-center md:text-start font-semibold  '>{data.title}</h1>
                 <p className='text-sm md:text-base text-center md:text-base md:text-start'>{data.introduction}</p>
-                <HeroButton color={color} />
+                <ServiceHeroButton color={color} />
             </div>
             <div style={{ color:`var(--${color}`}} className="mx-auto my-auto w-full">
               <ServiceHeroSvg 
-                  Icon={Svg}                  
+                  Icon={Svg}             
               />
-            </div>
-            
+            </div>            
       </div>
   )
 }

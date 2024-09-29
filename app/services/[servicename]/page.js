@@ -7,6 +7,7 @@ import Faq from "@/components/faq/Faq"
 import Footer from "@/components/footer/Footer"
 import { getService, getFaq } from '../../../libs/utils'
 import { notFound } from "next/navigation"
+import ReachUs from "@/components/service-page/ReachUs"
 
 export async function generateMetadata({ params }) {
   const { data } = await getService(params.servicename);
@@ -53,6 +54,7 @@ async function ServicesPage({ params }) {
     <>   
       <div className="bg-[--light]">          
         <ServiceHero data={data[0]} color={color} />
+        <ReachUs data={data[0]} color={color} />
         <Desc data={data[0]} color={color} />
         <div className="h-max md:h-[100vh] flex items-center">
           <Action color={color} data = {data[0]} />

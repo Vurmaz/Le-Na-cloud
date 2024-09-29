@@ -17,7 +17,7 @@
     }
     catch(err){
       console.error('Error fetching projects:', error);
-      return { data: [] }; // Return fallback data on error
+      return { data: [] }
     }                 
   }
 
@@ -32,7 +32,7 @@
         return { data:data.data };
       } else {        
         const text = await response.text();
-        console.error('Non-JSON response:', text);
+        console.error('Non-JSON response:', text)
         return { data: [] }
       }
     }

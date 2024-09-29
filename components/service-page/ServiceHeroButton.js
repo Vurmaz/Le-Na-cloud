@@ -3,7 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 
-export default function HeroButton({ color }) {
+export default function ServiceHeroButton({ color }) {
   return (
         <motion.button     
             style={{ backgroundColor:`var(--${color})`}}        
