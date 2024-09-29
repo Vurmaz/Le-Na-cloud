@@ -7,7 +7,7 @@ export default function ReachUsText({ data, color }) {
   return (
     <motion.div 
         className='flex flex-col text-center md:text-start justify-center p-4 gap-2 md:gap-8'
-        initial={{ opacity:0, x:200 }}
+        initial={{ opacity:0, x:100 }}
         whileInView={{ opacity:1, x:0 }}
         transition={{ duration:0.4 }} 
         viewport={{ once:true }}               
