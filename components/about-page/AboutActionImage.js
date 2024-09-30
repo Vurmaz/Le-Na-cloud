@@ -2,13 +2,14 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-export default function AboutActionImage({ x }) {
+export default function AboutActionImage({ variants, classes }) {
   return (
     <motion.div 
-        className='relative'
+        className={`relative ${classes}`}
         viewport={{ once:true }}
-        initial={{ opacity:0, x:x }}
-        whileInView={{ opacity:1, x:0 }}
+        variants={variants}
+        initial='initial'
+        whileInView='onView'
         transition={{
             duration:0.8,
             ease:'easeInOut'

@@ -2,13 +2,17 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import ReachUsTextButton from './ReachUsTextButton'
+import { rightToLeftVariants } from '@/libs/variants'
 
 export default function ReachUsText({ data, color }) {
   return (
     <motion.div 
-        className='flex flex-col text-center md:text-start justify-center p-4 gap-2 md:gap-8'
-        initial={{ opacity:0, x:100 }}
-        whileInView={{ opacity:1, x:0 }}
+        className='flex flex-col text-center md:text-start justify-center p-4 gap-2 md:gap-8
+        md:[--x-from:100] md:[--x-to:0] md:[--opacity-from:0%] md:[--opacity-to:100%]
+        '
+        variants={rightToLeftVariants}
+        initial='initial'
+        whileInView='onView'
         transition={{ duration:0.4 }} 
         viewport={{ once:true }}               
     >

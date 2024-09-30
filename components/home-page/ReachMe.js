@@ -4,14 +4,18 @@ import { motion } from 'framer-motion'
 import Svg from '../../public/talk.svg'
 import SvgHolder from '../SvgHolder'
 import ReachMeButton from './ReachMeButton'
+import { belowToTopVariants } from '../../libs/variants'
 
 export default function ReachMe() {
 
   return (
     <motion.div
-        className='grid grid-cols-1 md:grid-cols-3 gap-2 w-full rounded-lg md:gap-8 h-max p-4 text-white mx-auto bg-[--light] shadow-lg'        
-        initial={{ y:100,opacity:0 }}
-        whileInView={{ y:0,opacity:1 }}
+        className='grid grid-cols-1 md:grid-cols-3 gap-2 w-full rounded-lg md:gap-8 h-max p-4 text-white mx-auto bg-[--light] shadow-lg
+        md:[--y-from:100] md:[--y-to:0] md:[--opacity-from:0%] md:[--opacity-to:100%]
+        '        
+        variants={belowToTopVariants}
+        initial='initial'
+        whileInView='onView'
         viewport={{ once:true }}
         transition={{ duration:0.4, ease:'easeInOut', delay:0.1 }}
         

@@ -1,14 +1,18 @@
 'use client'
 import { motion } from 'framer-motion'
 import React from 'react'
+import { belowToTopVariants } from '@/libs/variants'
 
 export default function AboutTexts({ item }) {
       
   return (
     <motion.div         
-        className='flex flex-col gap-4 h-max md:h-[65vh] leading-loose'
-        initial={{ y:100 }}
-        whileInView={{ y:0 }}
+        className='flex flex-col gap-4 h-max md:h-[65vh] leading-loose
+        md:[--x-from:100] md:[--y-to:0] md:[--opacity-from:0%] md:[--opacity-to:100%]
+        '
+        variants={belowToTopVariants}
+        initial='initial'
+        whileInView='onView'
         transition={{ duration:0.5 }}
         viewport={{ once:true }}
     >

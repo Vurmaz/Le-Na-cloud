@@ -2,14 +2,18 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { rightToLeftVariants, leftToRightVariants } from '@/libs/variants'
 
 export default function InfoTwo() {
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 h-max py-32 md:py-0 md:h-[85vh] gap-8 md:w-5/6 mx-auto'>
         <motion.div 
-            className='flex flex-col items-center gap-8 overflow w-5/6 md:w-4/6 md:w-full mx-auto'
-            initial={{ x:-300, opacity:0 }}
-            whileInView={{ x:0, opacity:1 }}
+            className='flex flex-col items-center gap-8 overflow w-5/6 md:w-4/6 md:w-full mx-auto
+            md:[--x-from:-100] md:[--x-to:0] md:[--opacity-from:0%] md:[--opacity-to:100%]
+            '
+            variants={leftToRightVariants}
+            initial='initial'
+            whileInView='onView'
             viewport={{ once:true }}
             transition={{
                 duration:0.5,
@@ -26,9 +30,12 @@ export default function InfoTwo() {
             />  
         </motion.div>   
         <motion.div 
-            className='flex flex-col items-start justify-center gap-2'
-            initial={{ x:300, opacity:0 }}
-            whileInView={{ x:0, opacity:1 }}
+            className='flex flex-col items-start justify-center gap-2
+            md:[--x-from:100] md:[--x-to:0] md:[--opacity-from:0%] md:[--opacity-to:100%]
+            '
+            variants={rightToLeftVariants}
+            initial='initial'
+            whileInView='onView'
             viewport={{ once:true }}
             transition={{
                 duration:0.5,

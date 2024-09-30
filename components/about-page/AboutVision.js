@@ -1,16 +1,18 @@
 'use client'
 import React from 'react'
 import { motion } from 'framer-motion'
+import { belowToTopVariants } from '@/libs/variants'
 
 export default function AboutVision({ item }) {
   
   return ( 
     <div className='grid grid-cols-3 gap-8 md:px-4 lg:px-32 h-auto md:h-max py-4 md:py-32'>
       <motion.div 
-        className='flex justify-start p-4'
+        className='flex justify-start p-4 md:[--y-from:100] md:[--y-to:0] md:[--opacity-from:0%] md:[--opacity-to:100%]'
+        variants={belowToTopVariants}
         viewport={{ once:true }}
-        initial={{ opacity:0, y:-100 }}
-        whileInView={{ opacity:1, y:0 }}
+        initial='initial'
+        whileInView='onView'
         transition={{
           duration:0.6,
           ease:'easeInOut'

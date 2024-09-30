@@ -1,15 +1,19 @@
 'use client'
 import React from 'react'
 import { motion } from 'framer-motion'
+import { belowToTopVariants } from '@/libs/variants'
 
 export default function DescReasons({ reason, color }) {
 
   return (
     <motion.div 
-      className='p-2 md:p-4 w-5/6 flex flex-col gap-4 border-t-8 shadow-lg rounded-xl mx-auto max-w-[510px] sm:last:col-span-1 md:last:col-span-2 '
+      className='p-2 md:p-4 w-5/6 flex flex-col gap-4 border-t-8 shadow-lg rounded-xl mx-auto max-w-[510px] sm:last:col-span-1 md:last:col-span-2
+      md:[--y-from:150] md:[--y-to:0] md:[--opacity-from:0%] md:[--opacity-to:100%]
+      '
       style={{ borderColor:`var(--${color})`}}
-      initial={{ opacity: 0, y:150 }}
-      whileInView={{ opacity:1, y:0 }}
+      variants={belowToTopVariants}
+      initial='initial'
+      whileInView='onView'
       transition={{ duration:0.5, ease:'easeInOut' }}
       viewport={{ once:true }}
     >

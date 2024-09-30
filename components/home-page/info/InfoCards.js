@@ -33,7 +33,7 @@ export default memo(function InfoCards() {
   ]
 
   const variants = {
-    initial:{ opacity:0, x:300 },
+    initial:{ opacity:0, x:100 },
     show:{
       opacity:1,
       x:0,

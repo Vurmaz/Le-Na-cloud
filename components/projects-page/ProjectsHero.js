@@ -3,15 +3,13 @@ import Image from 'next/image'
 
 export default function ProjectsHero() {
   return (
-    <section className="relative w-full h-screen ">      
+    <section className="relative w-full h-screen">      
       <Image
         src="/red.webp"
         alt="Hakkımzda"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="top"
+        fill
         priority={true}
-        className="z-0"
+        className="z-0 object-top object-cover"
       />      
       <div className='grid grid-cols-1 md:grid-cols-2 absolute h-screen'>
         <div className='p-8 flex flex-col my-auto gap-4 h-max pt-8 pb-16'>

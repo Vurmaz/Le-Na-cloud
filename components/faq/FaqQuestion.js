@@ -1,6 +1,7 @@
 'use client'
 import { FaCaretDown } from "react-icons/fa";
 import { motion } from 'framer-motion';
+import { rightToLeftVariants } from "@/libs/variants";
 
 export default function FaqQuestion({ item, i, color, activeIndex, setActiveIndex }) {
 
@@ -10,10 +11,13 @@ export default function FaqQuestion({ item, i, color, activeIndex, setActiveInde
     
   return (
     <motion.div 
-        className='w-full md:w-5/6 h-auto border-b-2' 
+        className='w-full md:w-5/6 h-auto border-b-2
+        md:[--x-from:100] md:[--x-to:0] md:[--opacity-from:0%] md:[--opacity-to:100%]
+        ' 
         style={{ borderColor:`var(--${color})`}}
-        initial={{ x:200, opacity:0 }}
-        whileInView={{ x:0, opacity:1 }}
+        variants={rightToLeftVariants}
+        initial='initial'
+        whileInView='onView'
         transition={{ duration:0.5, ease:'easeInOut' }}
         viewport={{ once:true }}        
     >

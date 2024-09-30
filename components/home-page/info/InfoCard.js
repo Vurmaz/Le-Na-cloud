@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 export default function InfoCard({ Icon, title, desc, color}) {
 
   const variants = {
-    initial:{ opacity:0, x:300 },
+    initial:{ opacity:0, x:100 },
     show:{ opacity:1, x:0 }
   }
 

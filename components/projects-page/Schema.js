@@ -1,5 +1,8 @@
 import React, { memo } from 'react'
 import IconRenderer from '../IconRenderer';
+import { belowToTopVariants } from '@/libs/variants';
+import { motion } from 'framer-motion';
+import SchemaItem from './SchemaItem';
 
 export default memo(function Schema() {
 
@@ -37,17 +40,7 @@ export default memo(function Schema() {
             {
                 data.map((item) => {
                     return (
-                        <div className='flex gap-4 shadow-lg border-2 p-2 rounded-lg bg-[--light]' key={item.id}>
-                            <div 
-                                className='flex items-center flex-col gap-2'
-                                style={{ color:`var(--${item.color}`} }
-                            >
-                                <IconRenderer iconName={item.icon} className='md:w-16 md:h-16 w-12 h-12 text-[--primary]' />
-                                <h6 className='text-sm md:text-lg font-semibold'>{item.step}</h6>
-                                <h1 className='text-sm md:text-xl text-[--primary]'>{item.title}</h1>
-                                <p className='text-sm text-[--text]'>{item.desc}</p>
-                            </div>                               
-                        </div>                    
+                        <SchemaItem item={item} key={item.id} />
                     )
                 })
             }     
