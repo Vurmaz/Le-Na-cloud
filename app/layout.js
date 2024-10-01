@@ -5,8 +5,8 @@ import Header from "../components/header/Header";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Le-Na cloud",
-  description: "Profesyonel Salesforce Hizmetleri",
+  title: "Le-Na cloud | Profesyonel Salesforce Hizmetleri",
+  description: "Salesforce entegrasyonu, danışmanlık ve özelleştirme hizmetleriyle iş süreçlerinizi optimize edin. Deneyimli ekibimizle CRM çözümlerinizde maksimum verimliliğe ulaşın. İletişime geçin!",
   keywords: [
     'Salesforce',
     'Salesforce danışmanlık',

@@ -2,6 +2,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { leftToRightVariants } from '@/libs/variants'
+import InfoCardInfoText from './InfoCardInfoText'
 
 export default function InfoCardInfo() {
   return (
@@ -19,12 +20,7 @@ export default function InfoCardInfo() {
             delay:0.2
         }}       
     >     
-        <h1 className='text-2xl sm:text-3xl lg:text-4xl text-center mx-auto md:mx-0 text-[--primary]'>Sorunlarınızı Çözelim</h1>                          
-        <motion.p 
-            className={`w-full md:w-full lg:w-5/6 text-center md:text-start text-xs sm:text-base md:text-sm lg:text-base lg:text-base xl:text-base leading-loose`}
-        >
-            Salesforce çözümleri üreten bir firma olarak, iş süreçlerinizi dijitalleştirerek müşteri ilişkilerinizi güçlendiren, satışları artıran ve operasyonları optimize eden entegre çözümler sunuyoruz. Salesforce’un güçlü CRM platformunu kullanarak, müşteri verilerinizi tek bir merkezde toplar, analiz eder ve etkili stratejiler geliştirmenizi sağlarız. Bu sayede, satış süreçlerinizi hızlandırır, müşteri memnuniyetini artırır ve işinizi büyütürüz.
-        </motion.p>
+        <InfoCardInfoText />
         <motion.button 
             className='mx-auto md:mx-0 bg-[--primary] text-xs sm:text-base py-2 px-4 sm:px-8 rounded-full text-white shadow w-4/6 sm:w-3/6 lg:w-2/6 whitespace-nowrap	'
             whileHover={{

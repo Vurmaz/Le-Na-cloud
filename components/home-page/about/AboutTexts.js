@@ -16,7 +16,7 @@ export default function AboutTexts({ item }) {
         transition={{ duration:0.5 }}
         viewport={{ once:true }}
     >
-        <h1 className='text-3xl sm:text-4xl md:text-5xl text-start md:text-center text-gradient p-2'>{item.title}</h1>
+        <h4 className='text-3xl sm:text-4xl md:text-5xl text-start md:text-center text-gradient p-2'>{item.title}</h4>
         <p className='w-full md:w-4/6 text-start md:text-center mx-auto text-xs sm:text-base md:text-base xl:text-xl '>{item.desc}</p>
     </motion.div> 
   )

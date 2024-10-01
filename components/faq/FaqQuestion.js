@@ -29,7 +29,7 @@ export default function FaqQuestion({ item, i, color, activeIndex, setActiveInde
                 <div 
                     className='flex justify-between items-center p-2 md:p-4'
                 >
-                    <h1 className='text-sm lg:text-base text-[--text] font-semibold'>{item.question}</h1>
+                    <h5 className='text-sm lg:text-base text-[--text] font-semibold'>{item.question}</h5>
                     <motion.div
                         initial={{ transform:'rotate(0deg)'}}
                         animate={{ transform: activeIndex === i ? 'rotate(180deg)' : 'rotate(0deg)' }}

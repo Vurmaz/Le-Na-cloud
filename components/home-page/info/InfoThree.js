@@ -21,10 +21,10 @@ export default function InfoThree() {
                 delay:0.2
             }}                           
         >     
-            <h1 className='text-2xl sm:text-3xl lg:text-4xl text-center mx-auto md:mx-0 text-[--primary]'>CRM Nedir?</h1>        
-            <motion.p className={`w-full md:w-full lg:w-5/6 text-start md:text-start text-xs sm:text-base md:text-sm lg:text-sm xl:text-base leading-loose`}>
+            <h3 className='text-2xl sm:text-3xl lg:text-4xl text-center mx-auto md:mx-0 text-[--primary]'>CRM Nedir?</h3>        
+            <p className={`w-full md:w-full lg:w-5/6 text-start md:text-start text-xs sm:text-base md:text-sm lg:text-sm xl:text-base leading-loose`}>
                 CRM (Müşteri İlişkileri Yönetimi), işletmelerin müşterileriyle olan tüm etkileşimlerini yönetmek için kullandığı strateji ve teknolojilerdir. Amacı, müşteri memnuniyetini ve sadakatini artırarak satışları ve kârlılığı yükseltmektir. CRM sistemleri, müşteri verilerini toplar ve analiz eder, böylece daha etkili pazarlama, satış ve müşteri hizmetleri sağlar. İşletmeler, müşterilerinin ihtiyaçlarını daha iyi anlayarak onlara kişiselleştirilmiş deneyimler sunabilirler.
-            </motion.p>
+            </p>
         </motion.div> 
         <motion.div 
             className='flex flex-col items-center gap-8 overflow w-5/6 md:w-4/6 md:w-full mx-auto

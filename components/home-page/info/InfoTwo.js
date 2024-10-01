@@ -43,10 +43,10 @@ export default function InfoTwo() {
                 delay:0.2
             }}                           
         >     
-            <h1 className='text-2xl sm:text-3xl  lg:text-4xl text-center mx-auto md:mx-0 text-[--primary]'>Salesforce Nedir?</h1>        
-            <motion.p className={`w-full md:w-full lg:w-5/6 text-start px-4 md:px-0 md:text-start text-xs sm:text-base md:text-sm lg:text-sm xl:text-base leading-loose top-24`}>
+            <h3 className='text-2xl sm:text-3xl  lg:text-4xl text-center mx-auto md:mx-0 text-[--primary]'>Salesforce Nedir?</h3>        
+            <p className={`w-full md:w-full lg:w-5/6 text-start px-4 md:px-0 md:text-start text-xs sm:text-base md:text-sm lg:text-sm xl:text-base leading-loose top-24`}>
                 Salesforce, işletmelerin müşteri ilişkileri yönetimini (CRM) optimize etmelerine yardımcı olan bir bulut tabanlı platformdur. Web sitenize entegre edildiğinde, müşteri verilerini toplamanıza, analiz etmenize ve bu verileri etkili bir şekilde yönetmenize olanak tanır. Salesforce, satış süreçlerini otomatikleştirme, müşteri etkileşimlerini izleme ve pazarlama kampanyalarını optimize etme gibi işlevlerle müşteri memnuniyetini artırarak iş büyümesini destekler.
-            </motion.p>
+            </p>
         </motion.div>             
     </div>  
   )
