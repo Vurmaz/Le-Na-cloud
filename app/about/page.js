@@ -31,7 +31,7 @@ export default async function AboutPage() {
                 })
             }            
         </div>
-        <Faq data={faqData.data} color='primary' />
+        <Faq data={faqData} color='primary' />
         <Contact id={'about-contact'} color='light' /> 
         <Footer color='var(--light)' />     
     </div>

@@ -60,7 +60,7 @@ async function ServicesPage({ params }) {
           <Action color={color} data = {data[0]} />
         </div>      
         <WhyService data={data[0]} color={color} />
-        <Faq data={FaqData.data} color={color} />    
+        <Faq data={FaqData} color={color} />    
         <div className=''>
           <Contact color='white' id={'service-contact'} />        
         </div>
