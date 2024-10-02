@@ -14,7 +14,7 @@ export default function Faq({ data, color }) {
             <div className='flex flex-col items-center gap-8 w-full p-4 lg:col-span-2 h-max overflow-hidden'>
                 <h1 style={{ color: `var(--${color})`}} className='text-3xl md:text-2xl lg:text-5xl p-4'>SSS</h1>                
                     {
-                        data.map((item, i) => {
+                        data.data.map((item, i) => {
                                 return(
                                     <FaqQuestion key={i} item={item} i={i} color={color} activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
                                 )

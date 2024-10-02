@@ -5,18 +5,10 @@
       const response = await fetch(`${url}/api/getAbout`, {
           method: 'GET',
       })        
-      const contentType = response.headers.get('content-type');
-      if (contentType && contentType.includes('application/json')) {
-        const data = await response.json();        
-        return { data:data.data };
-      } else {        
-        const text = await response.text();
-        console.error('Non-JSON response:', text);
-        return { data: [] }
-      }
+      return await response.json();        
     }
     catch(err){
-      console.error('Error fetching projects:', error);
+      console.error('Error fetching projects:', err);
       return { data: [] }
     }                 
   }
@@ -26,19 +18,11 @@
       const response = await fetch(`${url}/api/getProjects`, {
         method:"GET",
       })  
-      const contentType = response.headers.get('content-type');
-      if (contentType && contentType.includes('application/json')) {
-        const data = await response.json();
-        return { data:data.data };
-      } else {        
-        const text = await response.text();
-        console.error('Non-JSON response:', text)
-        return { data: [] }
-      }
+      return await response.json()
     }
     catch(err){
-      console.error('Error fetching projects:', error);
-      return { data: [] }; // Return fallback data on error
+      console.error('Error fetching projects:', err)
+      return { data: [] }
     }  
   }
 
@@ -50,18 +34,10 @@
             "Content-Type": "application/json",
           }          
       }) 
-      const contentType = response.headers.get('content-type');      
-      if (contentType && contentType.includes('application/json')) {
-        const data = await response.json();
-        return { data:data.data };
-      } else {        
-        const text = await response.text();
-        console.error('Non-JSON response:', text);
-        return { data: [] }
-      }
+      return await response.json()
     }
     catch(err){
-      console.error('Error fetching projects:', error);
+      console.error('Error fetching projects:', err)
       return { data: [] }
     }      
   }  
@@ -74,8 +50,7 @@
            "Content-Type": "application/json",
         }
       })
-        const data = await response.json();   
-        return data.data     
+        return await response.json();                
     }
     catch(err){
       console.error('Error fetching projects:', err);
@@ -88,19 +63,11 @@
       const response = await fetch(`${url}/api/getProjects/${id}`, {
           method: 'GET',
       })     
-      const contentType = response.headers.get('content-type');
-      if (contentType && contentType.includes('application/json')) {
-        const data = await response.json();
-        return { data:data.data };
-      } else {        
-        const text = await response.text();
-        console.error('Non-JSON response:', text);
-        return { data: [] };
-      }
+        return await response.json();       
     }
     catch(err){
-      console.error('Error fetching projects:', error);
-      return { data: [] };
+      console.error('Error fetching projects:', err)
+      return { data: [] }
     }                    
     }
        
@@ -109,19 +76,11 @@
       const response = await fetch(`${url}/api/getService/${servicename}`, {
         method:"GET",
       })
-      const contentType = response.headers.get('content-type');
-      if (contentType && contentType.includes('application/json')) {
-        const data = await response.json();
-        return { data:data.data };
-      } else {        
-        const text = await response.text();
-        console.error('Non-JSON response:', text);
-        return { data: [] }
-      }
+      return await response.json()
     }
     catch(err){
-      console.error('Error fetching projects:', error);
-      return { data: [] }; // Return fallback data on error
+      console.error('Error fetching projects:', err)
+      return { data: [] }
     }
   }
 
@@ -130,18 +89,10 @@
       const response = await fetch(`${url}/api/getLogos`, {
           method:'GET',
       })
-      const contentType = response.headers.get('content-type');
-      if (contentType && contentType.includes('application/json')) {
-        const data = await response.json();
-        return { data:data.data };
-      } else {       
-        const text = await response.text();
-        console.error('Non-JSON response:', text);
-        return { data: [] }
-      }
+      return await response.json();
     }
     catch(err){
-      console.error('Error fetching projects:', error)
+      console.error('Error fetching projects:', err)
       return { data: [] }
     }
   }  
